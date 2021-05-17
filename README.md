@@ -2,14 +2,22 @@
 
 Podcast Analyse Tool zur NLP Untersuchung von deutschsprachigen Corona Podcasts.
 
-## 0
+## TODOS
+    
+- [x] Entwicklungsumgebung schaffen\
+- [ ] Datenerfassung\
+  - [ ] automatisierter Download von MP3 und Transkript
+- [ ] Datenaufbereitung\
+  - [ ] Ordnung
+  - [ ] Annotation (?)
+- [ ] Auswertung
+  - [ ] Wordcount per Person
+  - [ ] Sentinentanalyse
+- [ ] Visualisierung
 
-python3.9 -m venv podcast
-source podcast/bin/activate
-pip install matplotlib
-pip install SpeechRecognition
+## 0 Setup
 
-## 1. Daten Sammlung
+## 1. Datensammlung
 
 ## 2. Datenauswertung
 
