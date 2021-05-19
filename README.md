@@ -4,10 +4,10 @@ Podcast Analyse Tool zur NLP Untersuchung von deutschsprachigen Corona Podcasts.
 
 ## TODOS
     
-- [x] Entwicklungsumgebung schaffen\
-- [ ] Datenerfassung\
+- [x] Entwicklungsumgebung schaffen
+- [ ] Datenerfassung
   - [ ] automatisierter Download von MP3 und Transkript
-- [ ] Datenaufbereitung\
+- [ ] Datenaufbereitung
   - [ ] Ordnung
   - [ ] Annotation (?)
 - [ ] Auswertung
