@@ -1,4 +1,4 @@
-from decorators import timer
+# -*- coding : utf8 -*-
 import PyPDF2 as pdf
 
 from PyPDF2 import PdfFileReader as reader
@@ -13,10 +13,17 @@ def importFile(fileName):
     print(fileInfo,pageLayout,pageNum,outlines,sep='\n')
 
 def extrText(fileName):
-    o = po(fileName)
     r = reader(fileName)
-    text = o.extractText()
-    print(text,sep='\n')
-
+    numPages =  r.getNumPages()
+    Text = ''
+    for i in range(numPages):
+        page = r.getPage(i)
+        Text = Text + page.extractText()
+    
+    print(Text,sep='\n')
+    '''
+    with open('Skript001ndr.txt','wb') as f:
+        f.write(Text)
+    '''
 # importFile('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/SkriptFolge001.pdf')
 extrText('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/SkriptFolge001.pdf')
