@@ -88,7 +88,7 @@ def check_folder_structure():
     Path(os.path.join(RAW,'mdr')).mkdir(parents=True,exist_ok=True)
     Path(os.path.join(RAW,'ndr')).mkdir(parents=True,exist_ok=True)
     
-def create_dowload_list(n:int=184):
+def create_dowload_list_mdr(n:int=184):
     link_list_to_pdfs = [""]
     for i in range(64,n+1):
         _,_,_,i_to_str = _int_to_written_number(i)
@@ -102,8 +102,15 @@ def create_dowload_list(n:int=184):
     pprint(link_list_to_pdfs)
     return link_list_to_pdfs
 
+def create_download_list_ndr(n:int=89):
+    link_list = []
+    for i in range(100,(89*2)+1,2):
+        link_list.append("https://www.ndr.de/nachrichten/info/coronaskript"+str(i)+".pdf")
+    pprint(link_list)
+    return link_list
 
-def request_every_link(link_list):
+
+def request_every_link(link_list,folder_name:str):
     for i,element in enumerate(link_list):
         try:
             element = str(element)
@@ -117,15 +124,19 @@ def request_every_link(link_list):
         except ConnectionError:
             print("connection error")
         sleep(.3)
-        with open(os.path.join(os.path.join(RAW,"mdr"),element.split("/")[-1]),"wb") as f:
+        with open(os.path.join(os.path.join(RAW,folder_name),element.split("/")[-1]),"wb") as f:
             f.write(result.content)
     return True
 
 @timer
 def main():
-    mdr_download_list = create_dowload_list()
-    request_every_link(mdr_download_list[1:])
+    check_folder_structure()
+    
+    mdr_download_list = create_dowload_list_mdr()
+    request_every_link(mdr_download_list[1:],"mdr")
 
+    ndr_download_list = create_download_list_ndr()
+    request_every_link(ndr_download_list,"ndr")
 
 if __name__ == "__main__":
     main()
