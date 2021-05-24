@@ -132,12 +132,22 @@ def performRegEx(Text):
     specCharText = specChar2.sub('—',specCharText)
     #specChar3 = re.compile('\w,\w')
     #specCharText = specChar3.sub("n's",specCharText)
+    global cleanText
     cleanText = specCharText
     print(cleanText,sep='\n\n')
     '''
     with open('Skript001ndr.txt','wb') as f:
         f.write(Text)
     '''
-# importFile('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/SkriptFolge001.pdf')
-extrText('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/SkriptFolge001.pdf')
+
+def iterateFiles(filepath,index):
+    for i in range(1,range(100,(index*2)+1,2)):
+        path = filepath+str(i)+'.pdf'
+        extrText(path)
+        performRegEx(Text)
+        print(cleanText)
+
+# importFile()
+# extrText()
 performRegEx(Text)
+iterateFiles('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/',87)
