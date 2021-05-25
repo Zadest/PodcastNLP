@@ -33,9 +33,11 @@ def performRegEx(Text):
     # lbText = expLB.sub('[a-z]-[A-Z]',colonText)
     # Unterteilung nach Redner
     expCS = re.compile("\sCamillo Schumann\s")
+    expJK = re.compile("\sJan Kröger\s")
     expAK = re.compile("\sAlexander Kekulé\s|\sProf. Dr. med. Dr. rer. nat. Alexander S. Kekulé\s")
     CS = expCS.sub("\nCamillo Schumann\n",lbText)
-    AK = expAK.sub("\nAlexander Kekulé\n",CS)
+    JK = expJK.sub("\nJan Kröger\n",CS)
+    AK = expAK.sub("\nAlexander Kekulé\n",JK)
     SpeakerTransformed = AK
     print(SpeakerTransformed)
 
