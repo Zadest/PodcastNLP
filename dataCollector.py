@@ -3,11 +3,12 @@
 
 import os
 import requests
-from sklearn.cluster import cluster_optics_dbscan
+from xml.etree.ElementTree import ElementTree, fromstring
 from decorators import timer
 from pathlib import Path
 from time import sleep
 from pprint import pprint
+import re
 
 URL = "https://www.mdr.de/nachrichten/podcast/kekule-corona/"
 DATA = os.path.join(os.getcwd(),'data')
@@ -37,14 +38,33 @@ ZEHNERNAMEN = ("",
             "siebzig",
             "achtzig",
             "neunzig")
+
+MDR_XML = "https://www.mdr.de/nachrichten/podcast/kekule-corona/kompass-104-avBundle.xml"
+
+REGEX = r"^<li class\=\"css.*$"
 """
 //*[@id="content"]/div/div[1]/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[2]/div[1]/h4[1]/a
 
 XPATH to max-count
 
+regex = <li class\=\"cssDownload hasNoRessort \"\n>\n<a href=\"(.*)\"
+
 #mdr größer 119 -folge- in der url bis 137
 
 """
+
+def _load_and_decode_mdr_XML(mdr_xml_url: str) -> str:
+    data = ""
+    try:
+        result = requests.get(mdr_xml_url)
+        if result.status_code != requests.codes.ok:
+            raise ConnectionError
+        data = result.content.decode("utf8")
+    except Exception as e:
+        print("Something went wrong :",e)
+    finally:
+        return data
+
 def _int_to_written_number(index: int):
     if index >= 100:
         hunderter = index // 100
@@ -79,15 +99,61 @@ def _int_to_written_number(index: int):
 
     return None, None, None, None
 
-#dreissig
-#einhundertneunundsechzig
+def _find_links(data:str) -> list[str]:
+    data_list = data.split('\n')
+    links = []
+    for i, line in enumerate(data_list):
+        if re.search(REGEX,line):
+            link = data_list[i+2].split("\"")[1]
+            link = "https://www.mdr.de"+link
+            #print(link)
+            links.append(link)
+    return links
+
+def parse_mdr_xml(mdr_xml:str) -> list[str]:
+    tree = ElementTree(fromstring(mdr_xml))
+    root = tree.getroot()
+    max_count = int(root[-4].text)
+    links = []
+    for i, avDocument in enumerate(root[-2].iter("avDocument")):
+        links.append(avDocument.find("htmlUrl").text)
+    return links
+
+def _flatten_list(not_flat_list:list[list[str]]) -> list[str]:
+    return [item for sublist in not_flat_list for item in sublist]
 
 @timer
 def check_folder_structure():
     Path(RAW).mkdir(parents=True,exist_ok=True)
     Path(os.path.join(RAW,'mdr')).mkdir(parents=True,exist_ok=True)
     Path(os.path.join(RAW,'ndr')).mkdir(parents=True,exist_ok=True)
-    
+
+def create_download_list_mdr() -> list[str]:
+    data = _load_and_decode_mdr_XML(MDR_XML)
+    links = parse_mdr_xml(data)
+    subsite_links = []
+    file_links = []
+    for link in links:
+        result = requests.get(link)
+        temp_links = _find_links(result.content.decode("utf8"))
+        if temp_links == []:
+            continue
+        else:
+            subsite_links.append(temp_links)
+        sleep(0.1)
+    subsite_links = _flatten_list(subsite_links)
+
+    for link in subsite_links:
+        result = requests.get(link)
+        data = result.content.decode("utf8").split("\n")
+        for i, line in enumerate(data):
+            if re.search(r"<span class=\"linkText\">",line):
+                if i >= 1:
+                    temp_link = "https://www.mdr.de"+data[i-1].split("\"")[1]
+                    file_links.append(temp_link)
+        
+    return file_links
+
 def create_dowload_list_mdr(n:int=184):
     link_list_to_pdfs = [""]
     for i in range(64,n+1):
@@ -128,11 +194,14 @@ def request_every_link(link_list,folder_name:str):
             f.write(result.content)
     return True
 
+#def check_byte_size():
+
+
 @timer
 def main():
     check_folder_structure()
-    
-    mdr_download_list = create_dowload_list_mdr()
+
+    mdr_download_list = create_download_list_mdr()
     request_every_link(mdr_download_list[1:],"mdr")
 
     ndr_download_list = create_download_list_ndr()

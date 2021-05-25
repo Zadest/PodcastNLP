@@ -3,3 +3,4 @@ NLTK>=3.6.2
 matplotlib>=3.4.2
 PyPDF2>=1.26.0
 scrapy>=2.5.0
+selenium>=3.141.0
