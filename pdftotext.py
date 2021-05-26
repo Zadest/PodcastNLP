@@ -148,6 +148,6 @@ def iterateFiles(filepath,index):
         print(cleanText)
 
 # importFile()
-# extrText()
+extrText('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/SkriptFolge001.pdf')
 performRegEx(Text)
-iterateFiles('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/',87)
+# iterateFiles('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/',87)
