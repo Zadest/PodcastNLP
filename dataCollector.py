@@ -43,17 +43,7 @@ ZEHNERNAMEN = ("",
 
 MDR_XML = "https://www.mdr.de/nachrichten/podcast/kekule-corona/kompass-104-avBundle.xml"
 
-REGEX = r"^<li class\=\"css.*$"
-"""
-//*[@id="content"]/div/div[1]/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[2]/div[1]/h4[1]/a
-
-XPATH to max-count
-
-regex = <li class\=\"cssDownload hasNoRessort \"\n>\n<a href=\"(.*)\"
-
-#mdr größer 119 -folge- in der url bis 137
-
-"""
+REGEX = r"^<li class\=\"css.*$" 
 
 def _loading(current:int, total:int, status:str=""):
     bar_length = 80
