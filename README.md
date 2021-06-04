@@ -6,7 +6,8 @@ Podcast Analyse Tool zur NLP Untersuchung von deutschsprachigen Corona Podcasts.
     
 - [x] Entwicklungsumgebung schaffen
 - [ ] Datenerfassung
-  - [ ] automatisierter Download von MP3 und Transkript
+  - [x] automatisierter Download von MP3 und Transkript
+  - [ ] BUG : NDR nur 39 pdfs
 - [ ] Datenaufbereitung
   - [ ] Ordnung
   - [ ] Annotation (?)

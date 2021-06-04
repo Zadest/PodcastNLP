@@ -181,17 +181,17 @@ def create_download_list_mdr_OLD(n:int=184):
     pprint(link_list_to_pdfs)
     return link_list_to_pdfs
 
-def create_download_list_ndr(n:int=89):
+def create_download_list_ndr(n:int=91):
     link_list = []
     print(">> creating link list")
-    for i in range(100,(89*2)+1,2):
-        _loading(i//2,89,status="adding links to ndr list")
+    for i in range(100,100+(n*2)+1,2):
+        _loading(i//2,n,status="adding links to ndr list")
         link_list.append("https://www.ndr.de/nachrichten/info/coronaskript"+str(i)+".pdf")
     #pprint(link_list)
     return link_list
 
 
-def request_every_link(link_list,folder_name:str,keep_name:bool=True):
+def request_every_link(link_list,folder_name:str,keep_name:bool=True, verbose:bool=False):
     for i,element in enumerate(link_list):
         _loading(i,len(link_list),status="downloading "+folder_name)
         try:
@@ -200,7 +200,8 @@ def request_every_link(link_list,folder_name:str,keep_name:bool=True):
             print(f"Element : {element} is not type castable to str")
             break
         name = element.split("/")[-1]
-        #print(f"> downloading {name}")
+        if verbose:
+            print(f"> downloading {name}")
         try:
             result = requests.get(element)
         except ConnectionError:
@@ -215,7 +216,7 @@ def request_every_link(link_list,folder_name:str,keep_name:bool=True):
     return True
 
 @timer
-def main():
+def data_collector():
     print(">  checking for correct folder structure")
     check_folder_structure()
     print(">  done!")
@@ -232,5 +233,5 @@ def main():
     print(">  all done!")
 
 if __name__ == "__main__":
-    main()
+    data_collector()
 
