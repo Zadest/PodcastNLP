@@ -6,6 +6,25 @@ import re as re
 from PyPDF2 import PdfFileReader as reader
 from PyPDF2.pdf import PageObject as po
 
+import json
+from pathlib import Path
+
+def text_to_dict(text:str,write_state:bool=False) -> dict[int,list[str]] or None:
+    textLineItems = text.split('\n')    
+    my_dict = {}
+    j = 0
+    for i in range(0,len(textLineItems)-1):
+        if len(textLineItems[i].split(" ")) <= 2:
+            my_dict[j] = [textLineItems[i],textLineItems[i+1].encode("utf-8").decode("utf-8")]
+            j += 1
+    if not my_dict:
+        return None
+    if write_state:
+        with open("data/test.json","w") as f:
+            print("test write")
+            f.write(json.dumps(my_dict,indent=4))
+    return my_dict
+
 def importFile(fileName):
     r = reader(fileName)
     fileInfo = r.getDocumentInfo()
@@ -24,7 +43,7 @@ def extrText(fileName):
         Text = Text + page.extractText()
     print(Text)
 
-def performRegEx(Text):
+def performRegEx(Text:str):
     # Bindestrich entfernen
     expColon = re.compile("\n-")
     colonText = expColon.sub('',Text)
@@ -130,15 +149,17 @@ def performRegEx(Text):
     specCharText = specChar1.sub('"',SpeakerTransformed)
     specChar2 = re.compile('Š')
     specCharText = specChar2.sub('—',specCharText)
+    specCharText = re.sub(' +',' ',specCharText)
     #specChar3 = re.compile('\w,\w')
     #specCharText = specChar3.sub("n's",specCharText)
     global cleanText
     cleanText = specCharText
-    print(cleanText,sep='\n\n')
+    #print(cleanText,sep='\n\n')
     '''
     with open('Skript001ndr.txt','wb') as f:
         f.write(Text)
     '''
+    return cleanText
 
 def iterateFiles(filepath,index):
     for i in range(1,range(100,(index*2)+1,2)):
@@ -148,6 +169,24 @@ def iterateFiles(filepath,index):
         print(cleanText)
 
 # importFile()
-# extrText()
-performRegEx(Text)
-iterateFiles('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/',87)
+extrText('data/RAW/ndr/0.pdf')
+myText = performRegEx(Text)
+
+
+""""Das ist ein guter, deutscher Satz. Das ist ein schlecht, deutscher Satz."
+
+textblob_de = 7.0
+eigenes = 3.2
+
+faktorWort = {
+                außerordentlich = 1.1
+}
+
+Wörterbuch = {
+                "super" : 1.5,
+                "gut" : 1.0,
+                "schlecht" : -1.0,
+                "miserabel" : -1.5,
+}"""
+
+#iterateFiles('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/',87)
