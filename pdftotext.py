@@ -147,5 +147,4 @@ def iterateFiles(filepath,index):
 # importFile()
 # extrText('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/SkriptFolge001.pdf')
 # performRegEx(Text)
-# iterateFiles(os.path.join('data','RAW','mdr'),127)
 iterateFiles(os.path.join('data','RAW','ndr'),39)
