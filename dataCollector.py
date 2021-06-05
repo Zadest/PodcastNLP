@@ -3,7 +3,7 @@
 
 import os
 import sys
-from threading import currentThread
+
 import requests
 from xml.etree.ElementTree import ElementTree, fromstring
 from decorators import timer
@@ -12,6 +12,8 @@ from time import sleep
 from pprint import pprint
 import re
 
+from utils import _int_to_written_number, _flatten_list, _loading
+
 URL = "https://www.mdr.de/nachrichten/podcast/kekule-corona/"
 DATA = os.path.join(os.getcwd(),'data')
 RAW = os.path.join(DATA,'RAW')
@@ -19,42 +21,9 @@ RAW = os.path.join(DATA,'RAW')
 FILENAME_PREFIX = "kekule-corona-kompass-"
 FILENAME_POSTFIX = "-100-downloadFile.pdf"
 
-EINERNAMEN = ("",
-            "ein",
-            "zwei",
-            "drei",
-            "vier",
-            "fuenf",
-            "sechs",
-            "sieben",
-            "acht",
-            "neun")
-
-ZEHNERNAMEN = ("",
-            "",
-            "zwanzig",
-            "dreissig",
-            "vierzig",
-            "fuenfzig",
-            "sechzig",
-            "siebzig",
-            "achtzig",
-            "neunzig")
-
 MDR_XML = "https://www.mdr.de/nachrichten/podcast/kekule-corona/kompass-104-avBundle.xml"
 
 REGEX = r"^<li class\=\"css.*$" 
-
-def _loading(current:int, total:int, status:str=""):
-    bar_length = 80
-    filled_length = int(round(bar_length* current/ float(total)))
-
-    percents = round((100 * current + 1) / float(total), 1)
-
-    bar = "=" * filled_length + ">" + " " * (bar_length -filled_length)
-
-    sys.stdout.write("\r[%s] %s%s ... %s\r" % (bar, percents, "%", status))
-    sys.stdout.flush()
 
 def _load_and_decode_mdr_XML(mdr_xml_url: str) -> str:
     data = ""
@@ -68,39 +37,6 @@ def _load_and_decode_mdr_XML(mdr_xml_url: str) -> str:
     finally:
         return data
 
-def _int_to_written_number(index: int):
-    if index >= 100:
-        hunderter = index // 100
-        _,zehner,einer,zehner_einer_text = _int_to_written_number(index % 100)
-        text = EINERNAMEN[hunderter]+"hundert"+zehner_einer_text if zehner_einer_text else EINERNAMEN[hunderter]+"hundert"
-        return hunderter, zehner, einer, text
-
-    if index >= 20:
-        zehner = index // 10
-        einer = index % 10
-        text = EINERNAMEN[einer]+"und"+ZEHNERNAMEN[zehner] if einer != 0 else ZEHNERNAMEN[zehner]
-        return 0, zehner, einer, text
-
-    if index >= 13:
-        einer = index % 10
-        return 0,1,einer,EINERNAMEN[einer]+"zehn"
-
-    if index == 12:
-        return 0,1,2,"zwoelf"
-
-    if index == 11:
-        return 0,1,1,"elf"
-
-    if index == 10:
-        return 0,1,0,"zehn"
-
-    if index > 1:
-        return 0,0,index,EINERNAMEN[index]
-
-    if index == 1:
-        return 0,0,1,"eins"
-
-    return None, None, None, None
 
 def _find_links(data:str,regex_statement:str,rel_postition_to_regex:int=0) -> list[str]:
     data_list = data.split('\n')
@@ -146,7 +82,7 @@ def create_download_list_mdr() -> list[str]:
             continue
         else:
             subsite_links.append(temp_links)
-        sleep(0.1)
+        sleep(0.05)
     print("")
     
     subsite_links = _flatten_list(subsite_links)
@@ -181,16 +117,6 @@ def create_download_list_mdr_OLD(n:int=184):
     pprint(link_list_to_pdfs)
     return link_list_to_pdfs
 
-def create_download_list_ndr(n:int=91):
-    link_list = []
-    print(">> creating link list")
-    for i in range(100,100+(n*2)+1,2):
-        _loading(i//2,n,status="adding links to ndr list")
-        link_list.append("https://www.ndr.de/nachrichten/info/coronaskript"+str(i)+".pdf")
-    #pprint(link_list)
-    return link_list
-
-
 def request_every_link(link_list,folder_name:str,keep_name:bool=True, verbose:bool=False):
     for i,element in enumerate(link_list):
         _loading(i,len(link_list),status="downloading "+folder_name)
@@ -206,7 +132,7 @@ def request_every_link(link_list,folder_name:str,keep_name:bool=True, verbose:bo
             result = requests.get(element)
         except ConnectionError:
             print("connection error")
-        sleep(.3)
+        sleep(.1)
         if keep_name:
             with open(os.path.join(os.path.join(RAW,folder_name),element.split("/")[-1]),"wb") as f:
                 f.write(result.content)

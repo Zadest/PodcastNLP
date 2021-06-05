@@ -7,15 +7,32 @@ import os
 from PyPDF2 import PdfFileReader as reader
 from PyPDF2.pdf import PageObject as po
 
+import json
+from pathlib import Path
 
+def text_to_dict(text:str,write_state:bool=False) -> dict[int,list[str]] or None:
+    textLineItems = text.split('\n')    
+    my_dict = {}
+    j = 0
+    for i in range(0,len(textLineItems)-1):
+        if len(textLineItems[i].split(" ")) <= 2:
+            my_dict[j] = [textLineItems[i],textLineItems[i+1].encode("utf-8").decode("utf-8")]
+            j += 1
+    if not my_dict:
+        return None
+    if write_state:
+        with open("data/test.json","w") as f:
+            print("test write")
+            f.write(json.dumps(my_dict,indent=4))
+    return my_dict
 
-def importFile(fileName):
+"""def importFile(fileName):
     r = reader(fileName)
     fileInfo = r.getDocumentInfo()
     pageLayout = r.getPageLayout()
     pageNum = r.getNumPages()
     outlines = r.getOutlines() 
-    # print(fileInfo,pageLayout,pageNum,outlines,sep='\n')
+    # print(fileInfo,pageLayout,pageNum,outlines,sep='\n')"""
 
 def extrText(fileName):
     r = reader(fileName)
@@ -134,19 +151,27 @@ def performRegEx(text):
     specChar2 = re.compile('Š')
     specCharText = specChar2.sub('—',specCharText)
     cleanText = specCharText
-    print(cleanText,sep='\n\n')
+    ##print(cleanText,sep='\n\n')
     return cleanText
 
-def iterateFiles(filepath,index):
+def iterateFiles(filepath:str,index):
     for i in range(0,index):
         path = os.path.join(filepath,str(i)+'.pdf')
+        print(path)
         if os.path.exists(path):
             text = extrText(path)
             performRegEx(text)
         else:
             print('Datei nicht gefunden.')
 
-# importFile()
-# extrText('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/NDR_CVUpdate/SkriptFolge001.pdf')
-# performRegEx(Text)
-iterateFiles(os.path.join('data','RAW','ndr'),39)
+
+# wenn die Python-Datei ausgeführt wird, wird folgendes ausgeführt : 
+if __name__ == "__main__":
+    # get folder:
+    folder = os.path.join('data','RAW','ndr')
+
+    # get file count in folder:
+    file_count = len(os.listdir(folder))-1
+
+    # Iterate over all files in folder:
+    iterateFiles(folder,file_count)
