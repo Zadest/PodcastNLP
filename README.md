@@ -22,7 +22,12 @@ Podcast Analyse Tool zur NLP Untersuchung von deutschsprachigen Corona Podcasts.
 
 ## 0 Setup
 
+Es wird Python >= 3.9 benötigt.
+Mit 'pip install -r requirements.txt' werden die nötigen Module installiert.
+
 ## 1. Datensammlung
+
+Mit 'python dataTools.py' können bei bestehender Internetverbindung die Podcast-Transkripte von MDR und NDR heruntergeladen werden.
 
 ## 2. Datenauswertung
 
