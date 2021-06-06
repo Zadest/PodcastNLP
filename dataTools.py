@@ -17,17 +17,17 @@ def safe_dict_to_json(text:dict,folder:str,filename:str):
     with open(filename+".json", "w") as f:
         json.dump(text,f)
 
-def load_files():
+def load_files(keep_name:bool=True,verbose:bool=True):
     print(">>> Starting Data Collection...")
     print(">>> MDR...")
     mdr_download_list = get_download_files_list_mdr()
     print(">>> download files from MDR...")
-    request_every_link(mdr_download_list,os.path.join("data","RAW"),"mdr",keep_name=True,verbose=True)
+    request_every_link(mdr_download_list,os.path.join("data","RAW"),"mdr",keep_name=keep_name,verbose=verbose)
     print(">>> done!")
     print(">>> NDR...")
     ndr_download_list = get_download_files_list_ndr()
     print(">>> download files from NDR...")
-    request_every_link(ndr_download_list,os.path.join("data","RAW"),"ndr",keep_name=True,verbose=True)
+    request_every_link(ndr_download_list,os.path.join("data","RAW"),"ndr",keep_name=keep_name,verbose=verbose)
     print(">>> done!")
     print(">>> all done!")
 
