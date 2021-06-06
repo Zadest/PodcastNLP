@@ -11,7 +11,7 @@ from utils import request_every_link
 from dataCollectorNDR import get_download_files_list_ndr
 from dataCollectorMDR import get_download_files_list_mdr
 
-def safe_text_to_json(text:dict,folder:str,filename:str):
+def safe_dict_to_json(text:dict,folder:str,filename:str):
     path = os.path.join(os.path.join("data","refined"),folder)
     Path.mkdir(path,parents=True,exist_ok=True)
     with open(filename+".json", "w") as f:
@@ -40,3 +40,6 @@ def iter_files(folder:str,func) -> (list[Any] or None):
         if os.path.isfile(abs_path):
             return_val.append(func(abs_path))
     return return_val or None
+
+if __name__ == "__main__":
+    load_files()
