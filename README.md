@@ -5,15 +5,19 @@ Podcast Analyse Tool zur NLP Untersuchung von deutschsprachigen Corona Podcasts.
 ## TODOS
     
 - [x] Entwicklungsumgebung schaffen
-- [ ] Datenerfassung
+- [x] Datenerfassung
   - [x] automatisierter Download von MP3 und Transkript
-  - [ ] BUG : NDR nur 39 pdfs
+  - [x] BUG : NDR nur 39 pdfs
 - [ ] Datenaufbereitung
-  - [ ] Ordnung
+  - [x] Ordnung
+  - [ ] Unicode / ASCII Problem
   - [ ] Annotation (?)
 - [ ] Auswertung
   - [ ] Wordcount per Person
   - [ ] Sentinentanalyse
+    - [ ] TextBlob-de Standard
+    - [ ] eigenes Wörterbuch
+  - [ ] Wortartvergleich
 - [ ] Visualisierung
 
 ## 0 Setup
