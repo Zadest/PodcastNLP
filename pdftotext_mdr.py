@@ -1,6 +1,7 @@
 from decorators import timer
 import PyPDF2 as pdf
 import re as re
+import os
 
 from PyPDF2 import PdfFileReader as reader
 
@@ -14,17 +15,16 @@ def importFile(fileName):
 def extrText(fileName):
     r = reader(fileName)
     numPages =  r.getNumPages()
-    global Text
-    Text = ''
+    text = ''
     for i in range(numPages):
         page = r.getPage(i)
-        Text = Text + page.extractText()
-    # print(Text)
+        text = text + page.extractText()
+    return text
 
-def performRegEx(Text):
+def performRegEx(text):
     # Bindestrich entfernen
     expColon = re.compile("-\n")
-    colonText = expColon.sub('',Text)
+    colonText = expColon.sub('',text)
     # Zeilenumsprung entfernen
     expLB = re.compile('\n')
     lbText = expLB.sub('',colonText)
@@ -35,13 +35,22 @@ def performRegEx(Text):
     expCS = re.compile("\sCamillo Schumann\s")
     expJK = re.compile("\sJan Kröger\s")
     expAK = re.compile("\sAlexander Kekulé\s|\sProf. Dr. med. Dr. rer. nat. Alexander S. Kekulé\s")
-    CS = expCS.sub("\nCamillo Schumann\n",lbText)
-    JK = expJK.sub("\nJan Kröger\n",CS)
-    AK = expAK.sub("\nAlexander Kekulé\n",JK)
-    SpeakerTransformed = AK
-    print(SpeakerTransformed)
+    cs = expCS.sub("\nCamillo Schumann\n",lbText)
+    jk = expJK.sub("\nJan Kröger\n",cs)
+    ak = expAK.sub("\nAlexander Kekulé\n",jk)
+    speakertransformed = ak
+    print(speakertransformed)
 
+def iterateFiles(filepath,index):
+    for i in range(0,index):
+        path = os.path.join(filepath,str(i)+'.pdf')
+        if os.path.exists(path):
+            text = extrText(path)
+            performRegEx(text)
+        else:
+            print('Datei nicht gefunden.')
 
 # importFile('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/MDR_KCKompass/kck172.pdf')
-extrText('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/MDR_KCKompass/kck172.pdf')
-performRegEx(Text)
+# extrText('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/MDR_KCKompass/kck172.pdf')
+# performRegEx(text)
+iterateFiles(os.path.join('data','RAW','mdr'),127)
