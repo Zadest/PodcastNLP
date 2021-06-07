@@ -5,10 +5,11 @@ import re as re
 import os
 
 from PyPDF2 import PdfFileReader as reader
-from PyPDF2.pdf import PageObject as po
 
 import json
 from pathlib import Path
+
+import texttojson_ndr as jndr
 
 def text_to_dict(text:str,write_state:bool=False) -> dict[int,list[str]] or None:
     textLineItems = text.split('\n')    
@@ -25,14 +26,6 @@ def text_to_dict(text:str,write_state:bool=False) -> dict[int,list[str]] or None
             print("test write")
             f.write(json.dumps(my_dict,indent=4))
     return my_dict
-
-"""def importFile(fileName):
-    r = reader(fileName)
-    fileInfo = r.getDocumentInfo()
-    pageLayout = r.getPageLayout()
-    pageNum = r.getNumPages()
-    outlines = r.getOutlines() 
-    # print(fileInfo,pageLayout,pageNum,outlines,sep='\n')"""
 
 def extrText(fileName):
     r = reader(fileName)
@@ -60,7 +53,7 @@ def performRegEx(text):
     expSK = re.compile("\sProf. Dr. Stefan Kluge\s|\sStefan Kluge\s")
     expBS = re.compile("\sBeke Schulmann\s")
     cd = expCD.sub("\nChristian Drosten\n",lbText)
-    kh = expKH.sub("\nKorrina Hennig\n",cd)
+    kh = expKH.sub("\nKorinna Hennig\n",cd)
     am = expAM.sub("\nAnja Martini\n",kh)
     db = expDB.sub("\nDirk Brockmann\n",am) 
     sc = expSC.sub("\nSandra Ciesek\n",db)
@@ -107,11 +100,10 @@ def performRegEx(text):
     cds = expCDS.sub("\nChristian Dohna-Schwake\n",speakertransformed)
     speakertransformed = cds
     # Doppelter Space entfernen
-    space = re.compile('\s\s')
-    spaceText =  space.sub(' ',speakertransformed)
+    spaceText =  re.sub(' +',' ',speakertransformed)
     # Linebreak vor Redner
     cd2 = expCD.sub("\nChristian Drosten\n",spaceText)
-    kh2 = expKH.sub("\nKorrina Hennig\n",cd2)
+    kh2 = expKH.sub("\nKorinna Hennig\n",cd2)
     am2 = expKH.sub("\nAnja Martini\n",kh2)
     db2 = expAM.sub("\nDirk Brockmann\n",am2)
     sc2 = expSC.sub("\nSandra Ciesek\n",db2)
@@ -151,27 +143,32 @@ def performRegEx(text):
     specChar2 = re.compile('Š')
     specCharText = specChar2.sub('—',specCharText)
     cleanText = specCharText
-    ##print(cleanText,sep='\n\n')
+    print(cleanText,sep='\n\n')
     return cleanText
 
 def iterateFiles(filepath:str,index):
-    for i in range(0,index):
-        path = os.path.join(filepath,str(i)+'.pdf')
+    for i in range(100,index,2):
+        path = os.path.join(filepath,'coronaskript'+str(i)+'.pdf')
         print(path)
         if os.path.exists(path):
             text = extrText(path)
-            performRegEx(text)
+            retext = performRegEx(text)
+            with open(str(i)+'.txt','w') as f:
+                f.write(retext)
+            jndr.dicttojson(os.path.join(str(i)+'.txt'))
         else:
             print('Datei nicht gefunden.')
 
 
 # wenn die Python-Datei ausgeführt wird, wird folgendes ausgeführt : 
-if __name__ == "__main__":
+#if __name__ == "__main__":
     # get folder:
-    folder = os.path.join('data','RAW','ndr')
+folder = os.path.join('data','RAW','ndr')
+print(folder)
+    # # get file count in folder:
+    # file_count = len(os.listdir(folder))-1
 
-    # get file count in folder:
-    file_count = len(os.listdir(folder))-1
+    # # Iterate over all files in folder:
+    # iterateFiles(folder,file_count)
 
-    # Iterate over all files in folder:
-    iterateFiles(folder,file_count)
+iterateFiles(folder,102)
