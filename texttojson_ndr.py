@@ -3,17 +3,20 @@ import re
 import os
 
 def dicttojson(file):
-    f = ''
     i = 1
-    for line in txt:
-        key= line.strip()
-    # d_ndr.update({key})
-        print(i,key)
+    dndr = {}
+    speaker = []
+    text = []
+    for line in open(file):
+        list = line.split(':')
+        print(list)
+        # speaker = speaker.append(list[0])
+        # text = text.append(list[1])
+        # print(speaker,text)
         i=i+1
-
-
+        # dndr.update(list)
+        # print(dndr)
     
-    # cleanText = delimiters
     # ndr_dict = json.loads(cleanText)
     
     # {'1': {
