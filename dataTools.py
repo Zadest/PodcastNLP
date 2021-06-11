@@ -12,7 +12,8 @@ from utils import request_every_link
 from dataCollectorNDR import get_download_files_list_ndr
 from dataCollectorMDR import get_download_files_list_mdr
 
-from pdftotext_ndr import performRegEx, extrText
+from pdftotext_ndr import performRegEx, extrText as performRegEx_ndr, extrText
+from pdftotext_mdr import performRegEx as performRegEx_mdr
 
 def safe_dict_to_json(text:dict,folder:str,filename:str):
     path = os.path.join(os.path.join("data","refined"),folder)
@@ -56,8 +57,10 @@ def text_to_dict(text:str)-> dict[list[str]]:
             print("Name:" ,item)
 
 def test():
-    text = performRegEx(iter_files("data\\RAW\\ndr",extrText)[0])
-    return text
+    text_ndr = performRegEx_ndr(iter_files("data\\RAW\\ndr",extrText)[0])
+    text_mdr = performRegEx_mdr(iter_files("data\\RAW\\mdr",extrText)[0])
+    print(text_mdr or None)
+    return text_ndr, text_mdr
 
 
 #if __name__ == "__main__":
