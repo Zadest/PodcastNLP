@@ -10,6 +10,7 @@ import json
 from pathlib import Path
 
 import texttojson_ndr as jndr
+from dataTools import iter_files as iter
 
 def text_to_dict(text:str,write_state:bool=False) -> dict[int,list[str]] or None:
     textLineItems = text.split('\n')    
@@ -52,22 +53,22 @@ def performRegEx(text):
     expSC = re.compile("\sSandra Ciesek\s")
     expSK = re.compile("\sProf. Dr. Stefan Kluge\s|\sStefan Kluge\s")
     expBS = re.compile("\sBeke Schulmann\s")
-    cd = expCD.sub("\nChristian Drosten:",lbText)
-    kh = expKH.sub("\nKorinna Hennig:",cd)
-    am = expAM.sub("\nAnja Martini:",kh)
-    db = expDB.sub("\nDirk Brockmann:",am) 
-    sc = expSC.sub("\nSandra Ciesek:",db)
-    sk = expSK.sub("\nStefan Kluge:",sc) 
-    bs = expBS.sub("\nBeke Schulmann:",sk) 
+    cd = expCD.sub("\nChristian Drosten\n",lbText)
+    kh = expKH.sub("\nKorinna Hennig\n",cd)
+    am = expAM.sub("\nAnja Martini\n",kh)
+    db = expDB.sub("\nDirk Brockmann\n",am) 
+    sc = expSC.sub("\nSandra Ciesek\n",db)
+    sk = expSK.sub("\nStefan Kluge\n",sc) 
+    bs = expBS.sub("\nBeke Schulmann\n",sk) 
     speakertransformed = bs
     # Spezialfolge 51
     # if Folge = 51: 
     expBiS = re.compile("\sProf. Birgit Spinath\s|\sBirgit Spinath\s")
     expJM = re.compile("\sProf. Dr. Jürgen Manemann\s|\sJürgen Manemann\s")
     expJSC = re.compile("\sProf. Dr. Jonas Schmidt-Chanasit\s|\sJonas Schmidt-Chanasit\s")
-    bis = expBiS.sub("\nBirgit Spinath:",speakertransformed)
-    jm = expJM.sub("\nJürgen Manemann:",bis)
-    jsc = expJSC.sub("\nJonas Schmidt-Chanasit:",jm)
+    bis = expBiS.sub("\nBirgit Spinath\n",speakertransformed)
+    jm = expJM.sub("\nJürgen Manemann\n",bis)
+    jsc = expJSC.sub("\nJonas Schmidt-Chanasit\n",jm)
     speakertransformed = jsc
     # Spezialfolge 52
     # if Folge = 52:
@@ -75,67 +76,67 @@ def performRegEx(text):
     expAB = re.compile("\sProf. Dr. Alena Buyx\s|\sAlena Buyx\s")
     expHGE = re.compile("\sProf. Dr. Hans-Georg Eichler\s|\sHans-Georg Eichler\s")
     expWG = re.compile("\sProf. Dr. Wolfgang Greiner\s|\sWolfgang Greiner\s")
-    ma = expMA.sub("\nMarylyn Addo:",speakertransformed)
-    ab = expAB.sub("\nAlena Buyx:",ma)
-    hge = expHGE.sub("\nHans-Georg Eichler:",ab)
-    wg = expWG.sub("\nWolfgang Greiner:",hge)
+    ma = expMA.sub("\nMarylyn Addo\n",speakertransformed)
+    ab = expAB.sub("\nAlena Buyx\n",ma)
+    hge = expHGE.sub("\nHans-Georg Eichler\n",ab)
+    wg = expWG.sub("\nWolfgang Greiner\n",hge)
     speakertransformed = wg
     # Spezialfolge 53
     # if Folge = 53:
     expAnM = re.compile("\sAnia Muntau\s")
     expLW = re.compile("\sLothar Wieler\s")
     expMK = re.compile("\sMartin Kriegel\s")
-    anm = expAnM.sub("\nAnia Muntau:",speakertransformed)
-    lw = expLW.sub("\nLothar Wieler:",anm)
-    mk = expMK.sub("\nMartin Kriegel:",lw)
+    anm = expAnM.sub("\nAnia Muntau\n",speakertransformed)
+    lw = expLW.sub("\nLothar Wieler\n",anm)
+    mk = expMK.sub("\nMartin Kriegel\n",lw)
     speakertransformed = mk
     # Spezialfolge 67
     # if Folge = 67:
     expGR = re.compile("\sGernot Rohde\s")
-    gr = expGR.sub("\nGernot Rohde:",speakertransformed)
+    gr = expGR.sub("\nGernot Rohde\n",speakertransformed)
     speakertransformed = gr
     # Spezialfolge 81
     # if Folge = 81:
     expCDS = re.compile("\sChristian Dohna-Schwake\s")
-    cds = expCDS.sub("\nChristian Dohna-Schwake:",speakertransformed)
+    cds = expCDS.sub("\nChristian Dohna-Schwake\n",speakertransformed)
     speakertransformed = cds
     # Doppelter Space entfernen
     spaceText =  re.sub(' +',' ',speakertransformed)
     # Linebreak vor Redner
-    cd2 = expCD.sub("\nChristian Drosten:",spaceText)
-    kh2 = expKH.sub("\nKorinna Hennig:",cd2)
-    am2 = expKH.sub("\nAnja Martini:",kh2)
-    db2 = expAM.sub("\nDirk Brockmann:",am2)
-    sc2 = expSC.sub("\nSandra Ciesek:",db2)
-    sk2 = expSK.sub("\nStefan Kluge:",sc2) 
-    bs2 = expBS.sub("\nBeke Schulmann:",sk2) 
+    cd2 = expCD.sub("\nChristian Drosten\n",spaceText)
+    kh2 = expKH.sub("\nKorinna Hennig\n",cd2)
+    am2 = expKH.sub("\nAnja Martini\n",kh2)
+    db2 = expAM.sub("\nDirk Brockmann\n",am2)
+    sc2 = expSC.sub("\nSandra Ciesek\n",db2)
+    sk2 = expSK.sub("\nStefan Kluge\n",sc2) 
+    bs2 = expBS.sub("\nBeke Schulmann\n",sk2) 
     speakertransformed = bs
     # Spezialfolge 51
     # if Folge = 51: 
-    bis2 = expBiS.sub("\nBirgit Spinath:",speakertransformed)
-    jm2 = expJM.sub("\nJürgen Manemann:",bis2)
-    jsc2 = expJSC.sub("\nJonas Schmidt-Chanasit:",jm2)
+    bis2 = expBiS.sub("\nBirgit Spinath\n",speakertransformed)
+    jm2 = expJM.sub("\nJürgen Manemann\n",bis2)
+    jsc2 = expJSC.sub("\nJonas Schmidt-Chanasit\n",jm2)
     speakertransformed = jsc2
     # Spezialfolge 52
     # if Folge = 52:
-    ma2 = expMA.sub("\nMarylyn Addo:",speakertransformed)
-    ab2 = expAB.sub("\nAlena Buyx:",ma2)
-    hge2 = expHGE.sub("\nHans-Georg Eichler:",ab2)
-    wg2 = expWG.sub("\nWolfgang Greiner:",hge2)
+    ma2 = expMA.sub("\nMarylyn Addo\n",speakertransformed)
+    ab2 = expAB.sub("\nAlena Buyx\n",ma2)
+    hge2 = expHGE.sub("\nHans-Georg Eichler\n",ab2)
+    wg2 = expWG.sub("\nWolfgang Greiner\n",hge2)
     speakertransformed = wg2
     # Spezialfolge 53
     # if Folge = 53:
-    anm2 = expAnM.sub("\nAnia Muntau:",speakertransformed)
-    lw2 = expLW.sub("\nLothar Wieler:",anm2)
-    mk2 = expMK.sub("\nMartin Kriegel:",lw2)
+    anm2 = expAnM.sub("\nAnia Muntau\n",speakertransformed)
+    lw2 = expLW.sub("\nLothar Wieler\n",anm2)
+    mk2 = expMK.sub("\nMartin Kriegel\n",lw2)
     speakertransformed = mk2
     # Spezialfolge 67
     # if Folge = 67:
-    gr2 = expGR.sub("\nGernot Rohde:",speakertransformed)
+    gr2 = expGR.sub("\nGernot Rohde\n",speakertransformed)
     speakertransformed = gr2
     # Spezialfolge 81
     # if Folge = 81:
-    cds2 = expCDS.sub("\nChristian Dohna-Schwake:",speakertransformed)
+    cds2 = expCDS.sub("\nChristian Dohna-Schwake\n",speakertransformed)
     speakertransformed = cds2
     # Sonderzeichen
     specChar1 = re.compile('—|ﬁ')
@@ -143,7 +144,7 @@ def performRegEx(text):
     specChar2 = re.compile('Š')
     specCharText = specChar2.sub('—',specCharText)
     cleanText = specCharText
-    print(cleanText,sep='\n\n')
+    # print(cleanText,sep='\n\n')
     return cleanText
 
 def iterateFiles(filepath:str,index):
@@ -153,22 +154,24 @@ def iterateFiles(filepath:str,index):
         if os.path.exists(path):
             text = extrText(path)
             retext = performRegEx(text)
-            with open(str(i)+'.txt','w',encoding='utf-8') as f:
-                f.write(retext)
-            jndr.dicttojson(str(i)+'.txt')
+            path2 = os.path.join('data','REFINED','ndr')
+            if os.path.exists(path2):
+                with open(os.path.join(path2,str(i)+'.txt'),'w',encoding='utf-8') as f:
+                    f.write(retext)
+                jndr.dicttojson(i,path2)
         else:
             print('Datei nicht gefunden.')
 
 
 # wenn die Python-Datei ausgeführt wird, wird folgendes ausgeführt : 
-#if __name__ == "__main__":
+if __name__ == "__main__":
     # get folder:
-folder = os.path.join('data','RAW','ndr')
-print(folder)
-    # # get file count in folder:
-    # file_count = len(os.listdir(folder))-1
+    folder = os.path.join('data','RAW','ndr')
+    # get file count in folder
+    file_count = len(os.listdir(folder))-1
 
-    # # Iterate over all files in folder:
-    # iterateFiles(folder,file_count)
+    # Iterate over all files in folder:
+    iterateFiles(folder,file_count)
 
-iterateFiles(folder,102)
+    text = iter(folder,extrText)
+    print(text)

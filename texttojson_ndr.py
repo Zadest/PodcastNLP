@@ -2,22 +2,27 @@ import json
 import re
 import os
 
-def dicttojson(file):
+def dicttojson(index,path):
+    file = os.path.join(path,str(index)+'.txt')
     i = 1
     dndr = {}
-    speaker = []
-    text = []
-    for line in open(file):
-        list = line.split(':')
-        print(list)
-        # speaker = speaker.append(list[0])
-        # text = text.append(list[1])
-        # print(speaker,text)
-        i=i+1
-        # dndr.update(list)
-        # print(dndr)
-    
-    # ndr_dict = json.loads(cleanText)
+    with open(file,'r') as f: 
+        # list = line.split('\n')
+        list = f.read().split('\n')
+        # print(list)
+        for i in range(0,len(list)-1):
+            if i%2:
+                key = str(i//2)
+                value = list[i:i+2]
+                dndr.update({key:value})
+        # list = list.insert(1,i)
+        # print(list)
+        # i=i+1
+        print(dndr)
+    # ndr_dict = json.loads(dndr)
+    filename = str(index)
+    with open(os.path.join(path,filename+".json"),"w") as f:
+        json.dump(dndr,f)
     
     # {'1': {
     #                     "1":["drosten","REDEANTEIL"],
@@ -27,6 +32,3 @@ def dicttojson(file):
     # }
 
     # ndr_dict['erster']
-    # filename = 'lol'
-    # with open(filename+".json","w") as f:
-    #     json.dump(ndr_dict,f)
