@@ -45,6 +45,8 @@ def performRegEx(text):
     # Zeilenumsprung entfernen
     expLB = re.compile('\n')
     lbText = expLB.sub(' ',colonText)
+    # Start
+    head = re.sub('1/','\nHead\n1/',lbText)
     # Unterteilung nach Redner
     expCD = re.compile("\sChristian Drosten\s")
     expKH = re.compile("\sKorinna Hennig\s|\sCorinna Hennig\s")
@@ -53,7 +55,7 @@ def performRegEx(text):
     expSC = re.compile("\sSandra Ciesek\s")
     expSK = re.compile("\sProf. Dr. Stefan Kluge\s|\sStefan Kluge\s")
     expBS = re.compile("\sBeke Schulmann\s")
-    cd = expCD.sub("\nChristian Drosten\n",lbText)
+    cd = expCD.sub("\nChristian Drosten\n",head)
     kh = expKH.sub("\nKorinna Hennig\n",cd)
     am = expAM.sub("\nAnja Martini\n",kh)
     db = expDB.sub("\nDirk Brockmann\n",am) 
@@ -138,6 +140,9 @@ def performRegEx(text):
     # if Folge = 81:
     cds2 = expCDS.sub("\nChristian Dohna-Schwake\n",speakertransformed)
     speakertransformed = cds2
+    # Infos
+    info = re.sub('WEITERE','\nInfo\nWEITERE',speakertransformed)
+    speakertransformed = info
     # Sonderzeichen
     specChar1 = re.compile('—|ﬁ')
     specCharText = specChar1.sub('"',speakertransformed)
@@ -162,6 +167,11 @@ def iterateFiles(filepath:str,index):
         else:
             print('Datei nicht gefunden.')
 
+# TODO make it work
+def findHeadlines(file):
+    with open(file,'r') as f:
+        spans = f.readlines().span('[A-Z]')
+        print(spans)
 
 # wenn die Python-Datei ausgeführt wird, wird folgendes ausgeführt : 
 if __name__ == "__main__":
@@ -173,5 +183,11 @@ if __name__ == "__main__":
     # Iterate over all files in folder:
     iterateFiles(folder,file_count)
 
-    text = iter(folder,extrText)
-    print(text)
+    # text = iter(folder,extrText)
+    # print(text)
+
+
+folder = os.path.join('data','REFINED','ndr')
+filename = os.path.join(folder,'100.txt')
+# iterateFiles(folder,102)
+findHeadlines(filename)
