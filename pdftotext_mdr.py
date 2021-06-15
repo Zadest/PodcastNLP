@@ -29,8 +29,6 @@ def performRegEx(text):
     expLB = re.compile('\n')
     lbText = expLB.sub('',colonText)
     # Bindestrich einfügen. Fehler TODO
-    # expLB = re.compile('[a-z][A-Z]')
-    # lbText = expLB.sub('[a-z]-[A-Z]',colonText)
     # Unterteilung nach Redner
     expCS = re.compile("\sCamillo Schumann\s")
     expJK = re.compile("\sJan Kröger\s")
@@ -40,17 +38,28 @@ def performRegEx(text):
     ak = expAK.sub("\nAlexander Kekulé\n",jk)
     speakertransformed = ak
     print(speakertransformed)
+    cleanText = speakertransformed
+    return cleanText
 
-def iterateFiles(filepath,index):
+def iterateFiles(filepath:str,index):
     for i in range(0,index):
         path = os.path.join(filepath,str(i)+'.pdf')
+        print(path)
+
         if os.path.exists(path):
             text = extrText(path)
             performRegEx(text)
         else:
             print('Datei nicht gefunden.')
 
-# importFile('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/MDR_KCKompass/kck172.pdf')
-# extrText('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/MDR_KCKompass/kck172.pdf')
-# performRegEx(text)
-iterateFiles(os.path.join('data','RAW','mdr'),127)
+# wenn die Python-Datei ausgeführt wird, wird folgendes ausgeführt : 
+if __name__ == "__main__":
+    # get folder:
+    folder = os.path.join('data','RAW','mdr')
+
+    # get file count in folder:
+    file_count = len(os.listdir(folder))-1
+
+    # Iterate over all files in folder:
+    iterateFiles(folder,file_count)
+
