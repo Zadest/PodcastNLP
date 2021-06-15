@@ -45,6 +45,7 @@ def iterateFiles(filepath:str,index):
     for i in range(0,index):
         path = os.path.join(filepath,str(i)+'.pdf')
         print(path)
+
         if os.path.exists(path):
             text = extrText(path)
             performRegEx(text)
@@ -61,3 +62,4 @@ if __name__ == "__main__":
 
     # Iterate over all files in folder:
     iterateFiles(folder,file_count)
+

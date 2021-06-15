@@ -149,7 +149,6 @@ def performRegEx(text):
     specChar2 = re.compile('Š')
     specCharText = specChar2.sub('—',specCharText)
     cleanText = specCharText
-    # print(cleanText,sep='\n\n')
     return cleanText
 
 def iterateFiles(filepath:str,index):
@@ -177,7 +176,6 @@ def findHeadlines(file):
             if h:
                 print(i,h)
 
-
 # wenn die Python-Datei ausgeführt wird, wird folgendes ausgeführt : 
 if __name__ == "__main__":
     # get folder:
@@ -187,12 +185,3 @@ if __name__ == "__main__":
 
     # Iterate over all files in folder:
     iterateFiles(folder,file_count)
-
-    # text = iter(folder,extrText)
-    # print(text)
-
-
-# folder = os.path.join('data','REFINED','ndr')
-# filename = os.path.join(folder,'100.txt')
-# # iterateFiles(folder,102)
-# findHeadlines(filename)
