@@ -170,8 +170,13 @@ def iterateFiles(filepath:str,index):
 # TODO make it work
 def findHeadlines(file):
     with open(file,'r') as f:
-        spans = f.readlines().span('[A-Z]')
-        print(spans)
+        spans = f.readlines()
+        # print(spans)
+        for i in range(0,len(spans)):
+            h = re.search('\b[A-Z][A-Z][A-Z]',spans[i])
+            if h:
+                print(i,h)
+
 
 # wenn die Python-Datei ausgeführt wird, wird folgendes ausgeführt : 
 if __name__ == "__main__":
@@ -187,7 +192,7 @@ if __name__ == "__main__":
     # print(text)
 
 
-folder = os.path.join('data','REFINED','ndr')
-filename = os.path.join(folder,'100.txt')
-# iterateFiles(folder,102)
-findHeadlines(filename)
+# folder = os.path.join('data','REFINED','ndr')
+# filename = os.path.join(folder,'100.txt')
+# # iterateFiles(folder,102)
+# findHeadlines(filename)

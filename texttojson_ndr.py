@@ -19,7 +19,7 @@ def dicttojson(index,path):
     # ndr_dict = json.loads(dndr)
     filename = str(index)
     with open(os.path.join(path,filename+".json"),"w") as f:
-        json.dump(dndr,f)
+        json.dump(dndr,f,indent=4,ensure_ascii=False)
     
     # {'1': {
     #                     "1":["drosten","REDEANTEIL"],
