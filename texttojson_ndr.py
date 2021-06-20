@@ -15,7 +15,7 @@ def dicttojson(index,path):
                 key = str(i//2)
                 value = list[i:i+2]
                 dndr.update({key:value})
-        print(dndr)
+        # print(dndr)
     # ndr_dict = json.loads(dndr)
     filename = str(index)
     with open(os.path.join(path,filename+".json"),"w") as f:
