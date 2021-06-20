@@ -155,14 +155,17 @@ def performRegEx(text):
     return cleanText
 
 def iterateFiles(filepath:str,index):
-    for i in range(0,index):
-        path = os.path.join(filepath,str(i)+'.pdf')
+    return_list = []
+    files = os.listdir(filepath)
+    for i in range(len(files)):
+        path = os.path.join(filepath,files[i])
         print(path)
         if os.path.exists(path):
             text = extrText(path)
-            performRegEx(text)
+            return_list.append(performRegEx(text))
         else:
             print('Datei nicht gefunden.')
+    return return_list
 
 
 # wenn die Python-Datei ausgeführt wird, wird folgendes ausgeführt : 
@@ -174,4 +177,4 @@ if __name__ == "__main__":
     file_count = len(os.listdir(folder))-1
 
     # Iterate over all files in folder:
-    iterateFiles(folder,file_count)
+    myList = iterateFiles(folder,file_count)

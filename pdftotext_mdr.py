@@ -1,7 +1,10 @@
-from decorators import timer
+from nltk.tokenize import word_tokenize
+from .decorators import timer
 import PyPDF2 as pdf
 import re as re
 import os
+
+import json
 
 from PyPDF2 import PdfFileReader as reader
 
@@ -23,8 +26,10 @@ def extrText(fileName):
 
 def performRegEx(text):
     # Bindestrich entfernen
-    expColon = re.compile("-\n")
+    expColon = re.compile("(?:[a-z])(-\n)")
     colonText = expColon.sub('',text)
+
+    print(re.search(r"\n[A-Z]*\n",text))
     # Zeilenumsprung entfernen
     expLB = re.compile('\n')
     lbText = expLB.sub('',colonText)
@@ -39,18 +44,36 @@ def performRegEx(text):
     jk = expJK.sub("\nJan Kröger\n",cs)
     ak = expAK.sub("\nAlexander Kekulé\n",jk)
     speakertransformed = ak
-    print(speakertransformed)
+    return speakertransformed
 
 def iterateFiles(filepath,index):
-    for i in range(0,index):
-        path = os.path.join(filepath,str(i)+'.pdf')
-        if os.path.exists(path):
+    return_list = []
+    for filename in os.listdir(filepath):
+        path = os.path.join(filepath,filename)
+        if os.path.exists(path) and path.split('.')[-1].lower() == "pdf":
             text = extrText(path)
-            performRegEx(text)
+            #print(performRegEx(text))
+            return_list.append(performRegEx(text))
         else:
             print('Datei nicht gefunden.')
+    return return_list
 
-# importFile('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/MDR_KCKompass/kck172.pdf')
-# extrText('C:/Users/teres/OneDrive/Dokumente/Studium/Master/vl/CoronaPodcasts/MDR_KCKompass/kck172.pdf')
-# performRegEx(text)
-iterateFiles(os.path.join('data','RAW','mdr'),127)
+mylist = iterateFiles(os.path.join('data','RAW','mdr'),127)
+
+all_podcasts = {}
+for podcast_count in range(len(mylist)):
+    working_text = mylist[podcast_count].split('\n')
+    episode = {}
+    for i in range(len(working_text)-1):
+        if len(working_text[i].split(" ")) < 3:
+            episode[str(i)] = [working_text[i],working_text[i+1]]
+    all_podcasts[str(podcast_count)] = episode
+
+for key in all_podcasts:
+    with open(os.path.join("data","refined","mdr",key+".json"), "w", encoding="utf-8") as f:
+        json.dump(all_podcasts[key],f,indent=4, ensure_ascii=False)
+
+'''for key in all_podcasts["1"]:
+    for part in all_podcasts["1"][key]:
+        if part == "Camillo Schumann": 
+            print(all_podcasts["1"][key]) '''
