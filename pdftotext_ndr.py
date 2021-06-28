@@ -37,33 +37,42 @@ def extrText(fileName):
     # print(Text)
     return text
 
-def performRegEx(text,index):
+def find_date(text):
+    date = re.compile(r"([0-9]{1,}..+\d{4})\s")
+    return date.findall(text)
+
+def performRegEx(text,i,index):
     # Bindestrich entfernen
     expColon = re.compile("\n-")
     colonText = expColon.sub('',text)
     # zu .txt schreiben
     path = os.path.join('data','REFINED','ndr')
-    for p in range(100,index,2):
+    for p in range(i,index,2):
         if os.path.exists(path) and p!=174:
-            with open(os.path.join(path,str(p)+'.txt'),'w',encoding='utf-8') as f:
+            with open(os.path.join(path,str(p)+'.txt'),'w+',encoding='utf-8') as f:
                 f.write(colonText)
+            with open(os.path.join(path,str(p)+'.txt'),'r',encoding='utf-8') as f:        
                 newpath = os.path.join(path,str(p)+'.txt')
-                hfilename = 'header'+str(p)
-            # Finde Überschriften
-            with open(newpath,'r',encoding='utf-8') as f:
+                hpath = os.path.join(path,'h'+str(p)+'.json')
+                # Finde Überschriften
                 lines = f.readlines()
+                print(newpath)
+                print(hpath)
+                # print(lines[0])
                 j = 0
                 # Dictionary Überschriften
                 header_dict = {}
+                # print(f'Dictionary erstellt {header_dict=}')
                 for i in range(0,len(lines)):
                     isheader = re.search('[A-Z][A-Z]\n',lines[i])
-                    if (isheader):
+                    if isheader:
                         # print(i,lines[i])
                         # print(isheader)
                         header_dict.update({j:lines[i]})
+                        # print(f'Dictionary befüllt{header_dict=}')
                         j += 1        
-                with open(os.path.join(path,hfilename+".json"),"w",encoding='utf-8') as f:
-                    json.dump(header_dict,f,indent=4,ensure_ascii=True)
+                with open(hpath,"w",encoding='utf-8') as h:
+                    json.dump(header_dict,h,indent=4,ensure_ascii=True)
             with open(newpath,'r',encoding='utf-8') as f:
                 text = f.read()
             # Zeilenumsprung entfernen
@@ -136,7 +145,7 @@ def performRegEx(text,index):
             sc2 = expSC.sub("\nSandra Ciesek\n",db2)
             sk2 = expSK.sub("\nStefan Kluge\n",sc2) 
             bs2 = expBS.sub("\nBeke Schulmann\n",sk2) 
-            speakertransformed = bs
+            speakertransformed = bs2
             # Spezialfolge 51
             # if Folge = 51: 
             bis2 = expBiS.sub("\nBirgit Spinath\n",speakertransformed)
@@ -177,11 +186,12 @@ def performRegEx(text,index):
 
 def iterateFiles(filepath:str,index):
     for i in range(100,index,2):
+        print(i)
         path = os.path.join(filepath,'coronaskript'+str(i)+'.pdf')
         print(path)
         if os.path.exists(path)and i!=174:
             text = extrText(path)
-            retext = performRegEx(text,index)
+            retext = performRegEx(text,i,index)
             path2 = os.path.join('data','REFINED','ndr')
             if os.path.exists(path2):
                 with open(os.path.join(path2,str(i)+'.txt'),'w',encoding='utf-8') as f:
@@ -202,13 +212,3 @@ def findHeadlines(file):
 
 folder = os.path.join('data','RAW','ndr')
 iterateFiles(folder,301)
-
-
-# wenn die Python-Datei ausgeführt wird, wird folgendes ausgeführt : 
-# if __name__ == "__main__":
-#     # get folder:
-#     # get file count in folder
-#     file_count = len(os.listdir(folder))-1
-
-#     # Iterate over all files in folder:
-#     iterateFiles(folder,file_count)
