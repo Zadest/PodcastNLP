@@ -7,6 +7,9 @@ import os
 from PyPDF2 import PdfFileReader as reader
 from PyPDF2.pdf import PageObject as po
 
+#'(?<=\n)([A-Z][a-z|.]+[\s\S]){2,}(?=\n)'
+
+
 import json
 from pathlib import Path
 

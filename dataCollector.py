@@ -65,6 +65,8 @@ def check_folder_structure():
     Path(RAW).mkdir(parents=True,exist_ok=True)
     Path(os.path.join(RAW,'mdr')).mkdir(parents=True,exist_ok=True)
     Path(os.path.join(RAW,'ndr')).mkdir(parents=True,exist_ok=True)
+    Path(os.path.join(DATA,"REFINED",'ndr')).mkdir(parents=True,exist_ok=True)
+    Path(os.path.join(DATA,"REFINED",'mdr')).mkdir(parents=True,exist_ok=True)
 
 def create_download_list_mdr() -> list[str]:
     print(">> loading XML from mdr")
@@ -159,5 +161,5 @@ def data_collector():
     print(">  all done!")
 
 if __name__ == "__main__":
-    data_collector()
+    check_folder_structure()
 
