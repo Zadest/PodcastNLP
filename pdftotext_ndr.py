@@ -140,8 +140,8 @@ def performRegEx(text,i,index):
             # Linebreak vor Redner
             cd2 = expCD.sub("\nChristian Drosten\n",spaceText)
             kh2 = expKH.sub("\nKorinna Hennig\n",cd2)
-            am2 = expKH.sub("\nAnja Martini\n",kh2)
-            db2 = expAM.sub("\nDirk Brockmann\n",am2)
+            am2 = expAM.sub("\nAnja Martini\n",kh2)
+            db2 = expDB.sub("\nDirk Brockmann\n",am2)
             sc2 = expSC.sub("\nSandra Ciesek\n",db2)
             sk2 = expSK.sub("\nStefan Kluge\n",sc2) 
             bs2 = expBS.sub("\nBeke Schulmann\n",sk2) 
