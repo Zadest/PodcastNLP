@@ -48,7 +48,7 @@ def performRegEx(text,i,index):
     # zu .txt schreiben
     path = os.path.join('data','REFINED','ndr')
     for p in range(i,index,2):
-        if os.path.exists(path) and p!=174:
+        if os.path.exists(path) and p!=174 or p!=154:
             with open(os.path.join(path,str(p)+'.txt'),'w+',encoding='utf-8') as f:
                 f.write(colonText)
             with open(os.path.join(path,str(p)+'.txt'),'r',encoding='utf-8') as f:        
@@ -189,7 +189,7 @@ def iterateFiles(filepath:str,index):
         print(i)
         path = os.path.join(filepath,'coronaskript'+str(i)+'.pdf')
         print(path)
-        if os.path.exists(path)and i!=174:
+        if os.path.exists(path)and i!=174 or i!=154:
             text = extrText(path)
             retext = performRegEx(text,i,index)
             path2 = os.path.join('data','REFINED','ndr')
