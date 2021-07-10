@@ -1,3 +1,4 @@
+from typing import ContextManager
 from nltk.tokenize import word_tokenize
 from decorators import timer
 import PyPDF2 as pdf
@@ -24,11 +25,12 @@ def performRegEx(text):
 
     # Zeilenumsprung entfernen
     expLB = re.compile(r'\n')
-    lbText = expLB.sub(r'',colonText)
+    structText = expLB.sub(r'',colonText)
 
-    structText = re.sub(r"\s{2,}","\n",lbText)
-    time = re.compile(r"([0-9]{1,}:[0-9]{2}:[0-9]{2})|([0-9]{1,}:[0-9]{2})")
-    structText = time.sub(r"\n\1",structText)
+    # structText = re.sub(r"\s{2,}","\n",structText)
+    # time = re.compile(r"([0-9]{1,}:[0-9]{2}:[0-9]{2})|([0-9]{1,}:[0-9]{2})")
+    # structText = time.sub(r"\n\1",structText)
+    
     # Unterteilung nach Redner
     expCS = re.compile(r"\s(Camillo Schumann|CAMILLO SCHUMANN)[\s|\:]")
     expJK = re.compile(r"\s(Jan Kröger|Jan Christian Kröger|JAN KRÖGER|JAN CHRISTIAN KRÖGER)[\s|\:]")
@@ -42,11 +44,15 @@ def performRegEx(text):
 
 def find_time(text):
     time = re.compile(r"(([0-9]{1,}:[0-9]{2}:[0-9]{2})|([0-9]{1,}:[0-9]{2}))")
-    return time.findall(text)
+    return time.findall(text) or None
 
 def find_date(text):
-    date = re.compile(r"([0-9]{1,}\..+\d{4})\s")
-    return date.findall(text)
+    date = re.compile(r'([0-9]{1,2}\.\s+[\w|0-9]{1,}\s(?:2020|2021))')
+    return date.findall(text) or None
+
+def find_id(text):
+    id = re.compile(r'(\#[0-9]{1,3})')
+    return id.findall(text) or None
 
 def iterateFiles(filepath,index):
     return_list = []
@@ -55,6 +61,8 @@ def iterateFiles(filepath,index):
         if os.path.exists(path) and path.split('.')[-1].lower() == "pdf":
             text = extrText(path)
             text = performRegEx(text)
+            if os.listdir(filepath).index(filename) == 0:
+                print(text)
             if len(text)> 0:
                 print(f"appending {path=}")
                 return_list.append(text)
@@ -64,20 +72,27 @@ def iterateFiles(filepath,index):
 
 mylist = iterateFiles(os.path.join('data','RAW','mdr'),len(os.listdir(os.path.join("data","RAW","mdr"))))
 
-"""all_podcasts = {}
-for podcast_count in range(len(mylist)):
-    working_text = mylist[podcast_count].split('\n')
-    episode = {}
-    for i in range(len(working_text)-1):
-        if len(working_text[i].split(" ")) < 3:
-            episode[str(i//2)] = [working_text[i],working_text[i+1]]
-    all_podcasts[str(podcast_count)] = episode
 
-for key in all_podcasts:
-    with open(os.path.join("data","refined","mdr",key+".json"), "w", encoding="utf-8") as f:
-        json.dump(all_podcasts[key],f,indent=4, ensure_ascii=False)"""
-
-'''for key in all_podcasts["1"]:
-    for part in all_podcasts["1"][key]:
-        if part == "Camillo Schumann": 
-            print(all_podcasts["1"][key]) '''
+for i, episode in enumerate(mylist):
+    results = re.findall(r'\n(.*\s(?:Schumann|Kröger|Kekulé))\n(.*)',episode)
+    header = episode[:re.search(r'\n(.*\s(?:Schumann|Kröger|Kekulé))\n(.*)',episode).span()[0]+1]
+    print(header)
+    date = find_date(header) or 'None'
+    id = find_id(header)
+    meta = {
+            'id': id,
+            'source' : '',
+            'title' : '',
+            'date': date[0],
+            'speakers' : []
+        }
+    speakers = []
+    content = {'0' : ["None",header]}
+    for j,textblock in enumerate(results,1):
+        if textblock[0] not in speakers:
+            speakers.append(textblock[0])
+        content[str(j)] = [textblock[0],textblock[1].strip()]
+    meta["speakers"] = speakers
+    dump = {"metadata":meta,"content":content}
+    with open(os.path.join('data','REFINED','mdr',str(i)+'.json'), 'w', encoding='utf-8') as f:
+        json.dump(dump,f, ensure_ascii=False, indent=4)
