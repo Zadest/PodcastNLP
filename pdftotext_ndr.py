@@ -6,6 +6,9 @@ import os
 
 from PyPDF2 import PdfFileReader as reader
 
+#'(?<=\n)([A-Z][a-z|.]+[\s\S]){2,}(?=\n)'
+
+
 import json
 from pathlib import Path
 
@@ -185,9 +188,10 @@ def performRegEx(text,i,index):
             return cleanText
 
 def iterateFiles(filepath:str,index):
-    for i in range(100,index,2):
-        print(i)
-        path = os.path.join(filepath,'coronaskript'+str(i)+'.pdf')
+    return_list = []
+    files = os.listdir(filepath)
+    for i in range(len(files)):
+        path = os.path.join(filepath,files[i])
         print(path)
         if os.path.exists(path)and i!=174 or i!=154:
             text = extrText(path)
@@ -197,8 +201,10 @@ def iterateFiles(filepath:str,index):
                 with open(os.path.join(path2,str(i)+'.txt'),'w',encoding='utf-8') as f:
                     f.write(retext)
                 jndr.dicttojson(i,path2)
+            return_list.append(performRegEx(text))
         else:
             print('Datei nicht gefunden.')
+    return return_list
 
 # TODO make it work
 def findHeadlines(file):
@@ -210,5 +216,13 @@ def findHeadlines(file):
             if h:
                 print(i,h)
 
-folder = os.path.join('data','RAW','ndr')
-iterateFiles(folder,301)
+# wenn die Python-Datei ausgeführt wird, wird folgendes ausgeführt : 
+if __name__ == "__main__":
+    # get folder:
+    folder = os.path.join('data','RAW','ndr')
+
+    # get file count in folder:
+    file_count = len(os.listdir(folder))-1
+
+    # Iterate over all files in folder:
+    myList = iterateFiles(folder,file_count)

@@ -1,0 +1,260 @@
+ 1
+MDR Aktuell
+Kekulés Corona-Kompass Dienstag, 15. September 2020 #108: Kekulés Corona-Kompass
+Camillo Schumann, Moderator MDR Aktuell
+Das Nachrichtenradio
+Prof. Dr. med. Dr. rer. nat. Alexander S. Kekulé, Experte Professor für Medizinische Mikrobiologie Virologie an der Martin-Luther-Universität Halle-Wittenberg sowie Direktor des Instituts für Biologische Sicherheitsforschung in Halle
+Redaktioneller Hinweis: Die im Podcast #108 genannten Zahlen der Neuinfektionen für Frankreich und Spanien waren offenbar nicht korrekt und viel zu hoch. Unsere Quelle war die Johns Hopkins University, die zum Zeitpunkt der Aufzeichnung der Sendung diese Zahlen verbreitete.
+
+0:00:03 MDR Aktuell -Kekulés Corona-Kompass.
+Camillo Schumann
+
+Ich grüße Sie, Herr Kekulé.
+Alexander Kekulé
+
+Hallo, Herr Schumann. 
+0:00:10
+Camillo Schumann
+ Dienstag, der 15. September 2020.
+Der Blick aufs Infektionsgeschehen in Deutschland und bei unserem Nachbarn Österreich hat die Corona-Ampel eingeführt. Was sind die Vor- und was die Nachteile dieser Maßnahme?
+Außerdem: die Pharmafirma Astra Seneca hat ihre Studie für ihren Corona-Impfstoff nach heftigen Nebenwirkungen einer Probandin wieder aufgenommen. Was ist über diesen Fall bekannt?
+Dann: In der Diskussion: Können Masken für Immunität sorgen?
+Und am Ende der Sendung zwei Beispiele dafür, wie man es nicht machen sollte.
+Wir wollen Orientierung geben. Mein Name ist Camillo Schumann. Ich bin Redakteur und Moderator bei MDR Aktuell, das Nachrichtenradio. Jeden Dienstag, Donnerstag und Samstag haben wir einen Blick auf die aktuellen Entwicklungen rund um das Corona-Virus. Und wir beantworten Ihre Fragen. Das tun wir mit dem Virologen und Epidemiologen, Professor Alexander Kekulé. Ich grüße Sie, Herr Kekulé.
+Alexander Kekulé
+
+Hallo Herr Schumann.
+Camillo Schumann
+ Immer neue Rekord-Infektionszahlen werden bei unseren Nachbarn in Frankreich gemeldet. Fast 23.000 Neuinfektionen innerhalb von 24-Stunden. Spanien meldet über 27.000. Da ist Deutschland mit seinen rund 1409 Neuinfektionen, Stand heute, richtig gut dran, oder?
+
+0:01:24
+Alexander Kekulé
+ Ja, kann man so sagen. Aber in Europa ist das Virus außer Kontrolle. Das ist ganz offensichtlich. Ich glaube, dass weder Frankreich noch Spanien kurzfristig das wieder eingefangen bekommen.
+
+0:01:34
+Camillo Schumann
+ In Frankreich soll es Ende der Woche Antigen-Schnelltests in den Apotheken zu kaufen geben. Da kann dann jeder zuhause den Test machen. Dann muss man sich nicht mehr anstellen, wie das jetzt der Fall ist. Das jedenfalls hat unser ARD-Studio in Paris mir mitgeteilt. aber an Tests an sich mangelt es in Frankreich nicht. Jeder kann sich kostenlos testen lassen. Aufs Ergebnis wartet man unter Umständen bis zu einer Woche. Also leichtes Testchaos in Frankreich. Was können diese Antigen-Schnelltest denn da bewirken? Braucht man die dann noch?
+
+0:02:02
+Alexander Kekulé
+ Na, das Wichtigste ist bei diesen Tests, dass man sehr schnell das Ergebnis hat. Hier geht
+2
+wirklich Schnelligkeit vor Qualität und Flexibilität vor Qualität. Und das können eben die Antigen-Tests leisten, weil man praktisch sofort sieht, ob man positiv ist oder nicht. Deshalb braucht man die in Frankreich ganz dringend, insbesondere wenn die so lange Testzeiten haben. Das könnte dort noch, sage ich mal, so halbwegs die Lage verbessern. Was ich persönlich nicht verstehe, ist, dass es diese Testmöglichkeit gibt für Antigen-Tests. Die Publikation ist von März. Das ist also schon wirklich lange bekannt. Und es ist kein schwieriges Verfahren. Das ist technisch gesehen viel einfacher als die PCRs. Ich verstehe nicht, warum Europa das nicht früher angepackt hat. Dass man jetzt wartet, bis die großen Unternehmen da was liefern, statt zu ähnlich wie beim Impfstoff zu sagen, dass schieben wir an.
+
+0:02:54
+Camillo Schumann
+ Wenn man sich das Infektionsgeschehen in Europa anschaut. Wir haben die Zahlen ja gerade gehört. Wenn man die Antigen-Schnelltests vor 2-3 Monaten schon gehabt hätte, hätte man diese Zahlen möglicherweise jetzt nicht präsent bekommen.
+Alexander Kekulé
+ Ich gehe fest davon aus. Wir haben ja praktisch alle Maßnahmen, wenn man so will, epidemiologisch zu spät ergriffen. Zu spät, ist immer vorsichtig zu bewerten, weil natürlich Politik in Demokratien seine Zeit braucht. Aber hier muss man schon klar sagen, die ganzen neu aufgetretenen Fälle, die haben jetzt zu tun mit den Urlaubern, die zurückgekommen sind. In Frankreich eine ähnliche Situation. Zusätzlich mit dem Reiseverkehr. Frankreich ist ja auch stark ein Urlaubsland. Der größte Teil der Infektion ist an der Cote d'Azur unten im Süden. In Marseille habe ich jetzt gerade gehört, sind die Krankenhausbetten inzwischen voll. Die müssen jetzt ihre Notbetten aktivieren. Das heißt also, das hat schon mit der Reiseaktivität zu tun. Innerhalb Frankreichs, aber auch von Frankreich nach Frankreich. Und wenn man da vernünftig an gezielten Stellen Schnelltests gehabt hätte, hätte man natürlich vieles verhindern können. Ich kann auch sagen, dass der Vorsitzende des Gesundheitsausschusses des Europäischen Parlaments, das ist der Herr Lieske. Das ist ein Deutscher ein reiner Zufall. Reiner Zufall. Der ist ganz frühzeitig mit mir zusammen hinterher gewesen, dass die Europäische Union die Kommission hier etwas tut, um eben diese Schnelltests verfügbar zu machen. Das ist aber offensichtlich auch nicht erfolgreich gewesen.
+Camillo Schumann
+ Woran kann es gescheitert sein?
+Alexander Kekulé
+ Ich glaube, das hat mehrere Gründe. Der eine ist der, dass wir in Europa wie überhaupt im Westen eigentlich so die Tendenz haben, der Wirtschaft das Heft nicht aus der Hand zu nehmen. Man sagt dann: Naja, wir warten, bis die Wirtschaft diese Tests entwickelt. Die gro-ßen Unternehmen, die dann natürlich am schnellsten sind und am besten aufgestellt sind. Die haben aber alle das Problem, dass sie zugleich sehr viel Geld an den PCR-Tests verdienen. Viel mehr als man jemals an so einem Schnelltest verdienen könnte. So dass in dem Fall eine schlechte Idee war. Weil die natürlich erstmal sehr viel Geld mit den PCRs gemacht haben. Auch mit anderen Methoden. Diese sogenannten Lamp-Tests, die entwickelt wurden. Das sind auch welche, wo man Maschinen dazu braucht. Und da war es eben einfach nicht attraktiv für so ein Unternehmen, sich dann selber Konkurrenz zu machen. Und dass man dann sagt: Wir als Staat nehmen das in die Hand. Das ist etwas, wo eben China überhaupt keine Sekunde zögert. Auch in Russland wird bei so was nicht gezögert. Aber in Europa und den USA in den westlichen Demokratien ist es eben unüblich. Und da hat man zu lange gewartet oder vielleicht auch zu wenig erkannt, wie wichtig dieses Thema Testen ist.
+
+0:05:42
+Camillo Schumann
+ Zur Rolle der Europäischen Union in der Corona-Krise. Da kommen wir später noch mal dazu beim Beispiel Österreich. Schauen wir noch mal kurz nach Spanien. Spanien führt die Infektionszahlen in Europa ja mit Abstand an. Und dort öffnen seit einem halben Jahr an diesen Tagen wieder die Schulen. Und wenn man bedenkt, es gibt 100.000 Tests pro Tag und die Positivquote liegt aktuell laut Gesundheitsministerium bei rund 12 Prozent. Könnte
+3
+die Öffnung der Schulen das Problem sogar noch einmal verschärfen. Was meinen Sie?
+
+0:06:12
+Alexander Kekulé
+ Ja, das ist einfach ein ganz krasses Experiment. Anders kann man das nicht sagen. In den Vereinigten Staaten gibt es ja je nach Bundesstaat. Die sind ja auch nicht besser als wir. Aber da ist es je nach Bundesstaat so, dass es unterschiedliche Schwellen gibt, ab denen empfohlen wird, die Schulen zuzulassen. Also so klassisch ist: 50 Neuinfektionen pro 100.000 Einwohner. So manchem Deutschen kommt es vielleicht bekannt vor. Das ist bei uns auch die Alarmschwelle. Übrigens auch in Frankreich und in vielen Bundesstaaten ist das die Schwelle in den USA. Wo man sagt, dann müssen die Schulen geschlossen bleiben. Es gibt auch welche, wo das bei 100 Neuinfektionen, der Durchschnittswert pro 100.000 Einwohner ist. In den USA machen die das nicht so wie wir mit dem 7-Tagesmittel, sondern ein 14-Tagesmittel. Wer sie da beraten hat, weiß ich auch nicht. Weil das natürlich klar ist. Beim 14-Tage-Mittelwert. Da warten Sie ziemlich lange, bis der überschritten ist. Aber wie auch immer, die machen das halt so. Manche haben auch eine Grenze, wo sie sagen, wir gucken auf den Anteil der Positiven, wie hoch ist denn der von den Tests. Da ist üblicherweise 5 Prozent die Schwelle. Nach allem, was in den amerikanischen Bundesstaaten so üblich ist. Da wäre es mit der Situation in Spanien da, wo man sagen müsste, die Schulen müssen geschlossen bleiben.
+
+0:07:24
+Camillo Schumann
+ Können Sie uns erklären, warum in Spanien die Positivquote bei sagenhaften 12 Prozent liegt und in Deutschland irgendetwas bei 1 Prozent?
+
+0:07:34
+Alexander Kekulé
+ Naja, wir testen die Negativen. Der Grund ist der. Die Spanier haben natürlich zunächst mal noch ganz stark das Testen auf Symptome. Das heißt also, das prophylaktisches Testen, was bei uns in den Krankenhäusern passiert. Wo bei uns wahrscheinlich auch Menschen mehrfach getestet werden, ohne dass das registriert wird, also Negative mehrfach getestet werden. Das führt dazu, dass man eine geringe positive Quote bekommt. Das wäre wahrscheinlich in Spanien auch ein besseres Bild, wenn die so konsequent testen würden wie wir. Also das ist nicht so, dass die dann einen so viel höheren Faktor von Infizierten im Land rumlaufen haben. Es gibt natürlich auf der anderen Seite noch den anderen Effekt, wenn jetzt viele Menschen positiv sind und die Lage sich zuspitzt. Dann hat man Kontaktpersonen, die man testet. Und Kontaktpersonen, die sind von der Wahrscheinlichkeit her eher positiv als jemand, den man zufällig aus der Bevölkerung greift. So dass sich mit der Zunahme der Infektionen im Land die Positivquote nicht linear erhöht, sondern die kriegt dann so einen exponentiellen also so einen Verstärkungseffekt. Und das ist das, was wir in Spanien gerade beobachten.
+
+0:08:51
+Camillo Schumann
+ Weil Sie die Situation in den Krankenhäusern in Frankreich, in Marseille angesprochen haben. Wie entwickelt sich diese Situation auch in Spanien? Also gibt es da sozusagen einen unmittelbaren Zusammenhang?
+
+0:09:04
+Alexander Kekulé
+ Wir sind in ganz Europa in der Lage, dass wir die Zahl der Positiven ein bisschen entkoppelt haben von den Sterbefällen. Das war ja am Anfang so, wenn man sich erinnert, in allen Ländern, die zunächst betroffen waren. Da gab es zuerst positive Fälle und nach einer gewissen Verzögerung kamen die Toten. Das ist biologisch ganz klar zu erklären. Jetzt ist es so, dass der Anteil an Todesfällen an dieser positiven Rate, die getestet wird, wahrscheinlich in ganz Europa geringer sein wird. Auch in Spanien oder Frankreich. Das liegt eben daran, dass wir inzwischen wissen, dass ganz viele Menschen asymptomatisch oder schwach symptomatisch sind. Die wurden ja am Anfang nicht getestet, wenn man sich erinnert. Die allerersten Empfehlungen waren eigentlich europaweit in Deutschland, speziell vom Robert Koch-Institut. Dass nur Personen getestet werden, die Symptome haben und Kontakte nach China hatten. So ging es ja mal los. Und dann hieß es
+4
+Symptome und Kontakt in ein anderes Risikogebiet, die Lombardei in Italien zum Beispiel. Und wenn man natürlich so eine enge Auswahl hat, dann ist die Zahl der Patienten, die dann schwer krank werden, natürlich höher. Jetzt haben wir ein ganz anderes Infektionsgeschehen. Das hat sich ja auch so weiterentwickelt, dass wir viele Menschen haben, die einfach als Reiserückkehrer die Krankheit mitgebracht haben. Und das sind typischerweise nicht die Risikogruppen. Klar gibt es auch ältere Menschen, die reisen. Aber die großen Probleme kriegen wir ja immer dann, wenn wir solche Cluster-Ausbrüche in Altersheimen oder in Krankenhäusern haben oder auch manchmal im beruflich veranlasster Umgebung. Aber wenn es junge Menschen sind, führt es eben nicht zu einer großen Sterbens-Rate. Sodass man sagen muss: Wenn wir die Altersheime und die Krankenhäuser unter Kontrolle haben. Dann werden wir auf jeden Fall eine bessere, und eine bessere Intensivmedizin natürlich inzwischen, dann werden wir auf jeden Fall eine niedrigere Sterblichkeitsquote bekommen als im Frühjahr.
+
+0:11:04
+Camillo Schumann
+ Auch bei unseren Nachbarn in Österreich. Da steigen die Zahlen wieder rasant an. Aber natürlich ins Verhältnis gesetzt nicht ganz so extrem wie jetzt in Frankreich oder in Spanien. Am Montag über 700 Neuinfektionen. Belgien hat jetzt schon eine Reisewarnung verhängt. Auch die Schweiz warnt vor Reisen in das besonders betroffene Wien. Österreich hat als eine Maßnahme eine sogenannte Corona-Ampel eingeführt. Also je nach Regionen und Bezirken werden die Farben Rot, Orange, Gelb, Grün Mindestmaßnahmen vorgeschlagen. Allerdings wird, wenn die Ampel dann umspringt, zum Beispiel von Gelb auf Orange, in einigen Gebieten keine verschärften Maßnahmen verhängt. Man möchte an das Bewusstsein appellieren. Was bringt dann so eine Ampel?
+
+0:11:50
+Alexander Kekulé
+ Ja, gute Frage. Im Prinzip ist die Ampel etwas Sinnvolles. Das hatte ich ja auch vorgeschlagen, dass man so etwas in Deutschland machen sollte. Warum braucht man die Ampel? Weil man unterschiedliches regionales Geschehen hat und wir in der Lage, wo jetzt nicht mehr das ganze Land, also ganz Deutschland oder ganz Österreich, von einer einheitlichen Corona-Welle sozusagen erfasst wird, sondern wo man einzelne Ausbrüche hat, die lokal unterschiedlich sind. Oder wo man Ausbruchsgeschehen hat, was unterschiedlich ist, wie jetzt mit den jungen Menschen in den Großstädten. Dann ist es sinnvoll, dass man dort, wo das, wo der Infektionsdruck groß ist, also der Anteil der Übertragungen in der Allgemeinbevölkerung hoch ist, dass man dort strengere Maßnahmen hat. Dass man zum Beispiel in Wien die Gaststätten früh schließt oder ganz zumacht. Im Gegensatz zu Schließzeiten auf dem Land draußen in Niederösterreich oder so. Das ist sinnvoll. Und diese Idee gilt ja überall. Deshalb glaube ich, das Ampelschema hat Vorteile. Der andere große Vorteil ist, bevor jetzt jeder Kreisrat selber entscheidet und dann Österreich, die Landes-Obmänner von den neun Bundesländern. Wenn dann jeder selber entscheidet, wie er es macht. Dann kriegt man wieder so einen Flickenteppich. Dann führt das dazu, dass die Menschen von A nach B fahren, in ein anderes Bundesland und plötzlich ganz andere Regeln gelten. Und auch, dass man den Unterschied zwischen dem, was die Behörden anordnen, also was sozusagen im offiziellen Bereich ist, im öffentlichen Bereich ist und dem, was die Unternehmen machen. Die darf man ja auch nicht vergessen. Die haben ihre eigenen Pläne. Deshalb hat eine Ampel den Vorteil, dass sich alle danach richten. Die Unternehmen in dieser Region, alle Gemeinden und so weiter. Und dass man einfach weiß, was passiert. Bei Gelb wird das und das gemacht. Bei Grün wird das und das gemacht. Bei Rot sind folgende Maßnahmen angezeigt. Aber genau, wie Sie richtig sagen, das geht nur dann, wenn das Schema klar ist. Wenn das Schema jeder auf dem Tisch hat und man sich 100-Prozent dran hält, wenn es eintritt. Und nicht die Politiker dann wieder sozusagen ihre private Entscheidungen treffen.
+Camillo Schumann
+ Also was bringt dann so eine Ampel, wenn man es so umsetzt wie Österreich?
+5
+Alexander Kekulé
+ Ich glaube, das kann man jetzt noch nicht beurteilen. Das ist ja ganz neu. Die war, glaube ich im Probebetrieb letzten Monat schon. Und jetzt geht es mal allgemein los. Das Problem in Österreich ist: Das ist eine Krisenkommission. Diese Ampel-Kommission, wie sie die genannt haben, die festlegt, auf welcher Farbe die jetzt nun stehen soll in den einzelnen Bundesländern. Da sitzt also aus jedem Bundesland jemand drinnen. Aus der Bundesregierung, glaube ich, fünf Leute und dann noch fünf Wissenschaftler. Und was dann am Schluss rauskommt, kann eine ganze Weile dauern, bis sich das umsetzt. Das andere, was man berücksichtigen muss. Die haben natürlich auch nur die Daten auf dem Tisch, die 1-2 Wochen alt sind. Weil die ganzen Meldezeit natürlich Meldeverzögerung und so weiter dazu führt, dass wir nie einen ganz aktuellen Stand haben. Andererseits wenn die was empfehlen, dann glaube ich schon, dass sich das einspielt. Dann kann das sein, dass dann die Politiker nach und nach in Erklärungsnot kommen, wenn sie sich nicht daran halten. Und deshalb kann ich mir schon vorstellen, dass dieses Ampel-Modell, wenn es dann mal eingelaufen ist, tatsächlich etwas bringt und so ein bisschen die Politiker in den einzelnen Gebieten des Landes zur Disziplin ruft.
+
+0:15:08
+Camillo Schumann
+ Okay, also der Ampel in Österreich jetzt einfach mal ein bisschen Zeit geben. Man muss sich da so ein bisschen reinfinden. Das muss sich alles zurechtruckeln. Und weil auch gerade das Thema Daten gefallen ist. Wäre dann so eine Ampel vielleicht für ganz Europa mit einheitlichen Daten, einheitlichen Maßnahmen vielleicht auch eine Idee, jetzt aktuell für die Corona-Krise? Aber vielleicht auch für andere Krankheiten, andere Pandemien?
+
+0:15:33
+Alexander Kekulé
+ Ja, also ich halte es auf jeden Fall für sinnvoll, solche Ampel-Schemata. Ich glaube, wir haben hier auch schon mal drüber gesprochen. Die haben wir ja vor Jahrzehnten schon in unsere Pandemiepläne reingemacht. Das ist einfach sinnvoll. Wenn man verschiedene Entscheidungsträger auf verschiedenen Ebenen hat. Dann hat man eine Fachkommission, die legt sozusagen mal das Schema fest. Und da ist es ganz wichtig, dass man natürlich flexibel ist. Und das könnte man klar europaweit machen. Und man entbindet dann in gewisser Weise das Gesundheitsamt in der letzten Provinz davon, von Fall zu Fall zu entscheiden, was jetzt nun sinnvoll ist und was nicht, während gerade der Landrat ihm im Nacken sitzt. Deshalb hätte ich mir eine stärkere europäische Führung und auch Steuerung des ganzen Covid-19 Problems von Anfang an gewünscht. Es ist wirklich sehr sehr schade, dass von der Europäischen Kommission aus Brüssel da eigentlich praktisch nichts gekommen ist.
+Camillo Schumann
+ Und sehen Sie denn Anzeichen, dass da ein Umdenken stattfindet? Wie wird das auch mit Kollegen diskutiert?
+Alexander Kekulé
+ Also kaum einer weiß ja, dass es tatsächlich bei der Europäischen Kommission eine Corona-Kommission gibt, so eine Berater-Kommission von sechs Personen, wo also zwei sogar aus Deutschland kommen. Frau von der Leyen hat das dann irgendwann eingerichtet. Ich habe bis jetzt noch nie gehört, was die für Empfehlungen abgegeben haben. Ich glaube auch nicht, dass das sehr weit führt. Also wenn man sich jetzt so die medizinischen Seiten der Europäischen Kommission anschaut. Da stehen so ein paar Schmunzler drauf. Die möchte ich jetzt gar nicht zitieren. Das ist so. Das Thema ist für die offensichtlich nicht im Fokus oder vielleicht sogar abgefahren, weil sie das Gefühl haben: Wenn wir jetzt den Mitgliedsstaaten auch noch reinreden, was sie zu tun haben, wo die Probleme haben, ihre eigenen Bundesländer sofern Bundesstaaten sind, unter Kontrolle zu bekommen oder in Frankreich die Departements. Ich glaube, da hat Europa so viele Probleme, dass es im Moment überzogen wäre, von Brüssel aus gesehen, das sich auch noch auf die Tagesordnung zu setzen.
+
+0:17:43
+Camillo Schumann
+ Aber gut Probleme hin oder her. Die sind ja zum Lösen gedacht die Probleme. Was kann es
+6
+einen besseren Anlass geben als eine weltweite Pandemie? Würden Sie sich denn wünschen, dass man sich gerade mit Blick in die Zukunft. Das muss ja nicht der Herbst sein. Aber das kann ja vielleicht nächstes Jahr sein, dass man sich, was solche Ampelpläne beispielsweise angeht, noch mal zusammensetzt?
+
+0:18:06
+Alexander Kekulé
+ Ja, das wäre dringend notwendig. Wir hatten die Diskussion in Europa zuletzt, wir hatten sie mehrmals, aber zuletzt nach dem Ebola-Ausbruch in Westafrika. Damals war es so, dass ich wirklich mehrfach in Brüssel war und wir beraten haben, damals noch von der Schutzkommission aus, die die Bundesregierung damals beraten hat. Was man machen kann, um bei künftigen Ausbrüchen sowohl in Europa als auch außerhalb schneller zu reagieren. Konzertierter zu reagieren, besser aufgestellt zu sein. Ich möchte nicht wissen, wie viele Pläne in den Schubladen liegen. Es gibt auch ein europäisches Krisen-Reaktionszentrum. Von dem habe ich bis jetzt auch noch gar nichts gehört. Das ist eingerichtet. Die haben da so ein ganz tolles Lagezentrum tatsächlich dort in Brüssel im Untergeschoss. Aber das sind alles Pläne, die sich jetzt in dieser Krise noch nicht umgesetzt haben. Ich würde mir sehr wünschen, dass wir das für die Zukunft hätten. Jetzt mal so ganz praktisch gesehen. Es gibt ja auch Länder, die haben Schwierigkeiten, so viel zu testen wie wir in Deutschland. Und am Anfang eines Ausbruchs ist es ja immer so, dass man ein großes Labor dafür braucht. Schnelltests kommen dann irgendwann. Aber die haben sie nicht am ersten Tag. Und diese Laborkapazitäten schnell dahin zu bringen, wo vielleicht ein Mitgliedsstaat in Not ist. Selbst das ist ja noch nicht vorgesehen. Wir haben ein paar Laborcontainer, die wir hier und da mal in ärmere Länder der Welt gebracht haben, wenn dort Ausbrüche waren. Aber es gibt keinen konzertierten, keinen Plan, wie sich Europa zum Beispiel gegenseitig hilft bei einem solchen Ausbruch. Wenn das jetzt in einem Land passieren würde, wo man weniger Möglichkeiten als in Italien, Spanien oder Deutschland hat.
+
+0:19:47
+Camillo Schumann
+ Gut, wir sind gespannt, welche europäische Antwort es auf die Corona-Krise und künftige Krisen geben wird. Wir müssen noch einen kurzen Blick nach Israel wagen. 4000 Fälle pro Tag. Auch dort wieder extrem hohe Zahlen. Und Israel hat wieder einen Lockdown verhängt. Drei Wochen soll er gelten. Die Maß-nahmen sehen die Schließung von nicht lebensnotwendigen Geschäften wie auch Schulen vor. Außerdem sei der Eintritt zu Synagogen und anderen Gotteshäusern stark eingeschränkt oder auch ganz untersagt worden. Restaurants dürfen nur noch außer Haus verkaufen. Menschen dürfen sich nicht weiter als 500 Meter von ihren Wohnungen entfernen. Da bekommen wir das Gefühl eines Déjà-vu. In Israel passiert das, wovor wir uns fürchten. Was hat Israel falsch gemacht?
+
+0:20:33
+Alexander Kekulé
+ Ja, ich glaube, das kann man nicht deutlicher formulieren. Es ist so, dass das quasi das Mahnmal ist. Das ist das Menetekel, was wir uns ansehen müssen. Das kann uns auch passieren. Israel hat eben keine klare Steuerung. Dort ist es sehr stark politisch entschieden.
+Benjamin Netanjahu hat aus politischen, wirtschaftlichen Gründen alles wieder aufgemacht. Dann gab es fürchterliche Ausbrüche in mehreren Schulen. Insgesamt hat die Bevölkerung dadurch das falsche Signal bekommen. Nach dem Motto die Krise ist jetzt vorbei. Das wird ganz, ganz schwer, wenn jetzt in dieser Situation wieder zugemacht wird. Weil die Akzeptanz für diese Maßnahmen ist bei dem Großteil der israelischen Bevölkerung überhaupt nicht mehr da. Dieser Lockdown ist so ein bisschen Lockdown light. Das muss man vielleicht dazu erklä-ren. Es ist nämlich so, am Freitag ist ein jüdisches Fest: Rosch Haschana, also das Neujahrsfest. Und da wird sowieso alles zugemacht. Und ich glaube, die haben 14. Tage normalerweise Schulferien da. Diese Veranstaltung geht quasi am Freitagabend los und jetzt wird also am Mittwoch zugemacht. Es ist nicht ganz so krass, wie es klingt mit dem Lockdown. Aber trotzdem haben die Schulferien vorgezogen. Und sie haben vor allem überhaupt keinen Plan, wie es danach weitergeht. Es ist sozusa- 7
+gen ein Lockdown ohne Exit-Strategie. Und da haben Sie völlig Recht. Da muss man wirklich ein Déjà-vu haben. Das war ja in ganz Europa so ähnlich.
+
+0:22:03
+Camillo Schumann
+ Und warum? Weil Sie eingangs gesagt haben, das könnte uns auch drohen. Warum?
+
+0:22:09
+Alexander Kekulé
+ Das würde uns drohen, wenn die Lage völlig außer Kontrolle geht. Schauen wir uns Frankreich und Spanien an. Die versuchen mit den Methoden, mit denen man halbwegs begrenzte Ausbrüche unter Kontrolle bekommen kann, das wieder einzufangen. Das heißt also, sie versuchen, kleinere Schließungen zu machen. Sie versuchen, Kontakt abends in Südfrankreich zu reduzieren. Es geht um die Maske und den Abstand. Aber letztlich sind das alles Methoden, die funktionieren nur dann, wenn die Zahl der Infizierten im Land ein gewisses Maximum nicht überschreitet. Sonst kriegen Sie einfach immer, egal, was Sie maDurch die Reste, die Rest-Infektionen, die bei jeder Maßnahme letztlich möglich sind, kriegen Sie trotzdem eine explosionsartige Vermehrung der Fälle. Also alles, was kein Lockdown ist, ist ja, wenn man so will, ein durchlässiges System. Das ist ein Kessel mit Löchern. Und wenn der Kessel wahnsinnig viele Löcher hat und wahnsinnig viel Wasser in dem Kessel drin ist, dann funktioniert diese Methode nicht mehr. Ich habe mal m Anfang haben wir das mal erklärt. Für Deutschland waren wir auch kurz in der Lage. Das ist quasi diese exponentielle Phase drei einer Pandemie, wo das wie so ein Hockeystick wie ein Hockeyschläger, wo plötzlich schlagartig die Fälle steigen. Von da muss man zurück in diese Phase kommen, wo die Gesundheitsämter eine Chance haben, nachzuverfolgen. Also diese Phase II. Da sind wir in Deutschland noch. Aber wenn das komplett aus dem Ruder gerät, dann haben wir natürlich auch keine andere Möglichkeit. Oder wir schauen einfach zu, wie die Leute infiziert werden. Aber ich glaube nicht, dass das politisch akzeptiert werden wird.
+
+0:23:59
+Camillo Schumann
+ Die Alltagsmasken müssen uns schützen. Dass sie vor einer Infektion schützen. In diesem Punkt sind sich die Mediziner weltweit einigermaßen einig. Und jetzt gibt es eine neue Theorie von amerikanischen Wissenschaftlern, die den Masken noch ein ganz anderes Potenzial attestieren. Ihrer Theorie zufolge können sich andere Menschen durch eine Maske zwar anstecken, ihr Immunsystem könnte die wenigen Erreger, die dann durch diese Maske kommen aber so gut bekämpfen, dass die Betroffenen nichts von der Infektion merken. Und die Hoffnung ist natürlich die Reaktion des Immunsystems reicht aus, um eine Immunität gegen das Virus aufzubauen. Also Masken sorgen für Immunität. Also eigentlich ist es ja die Theorie, die wir schon im Podcast mal besprochen haben. Die Virusmenge ist entscheidend, oder?
+
+0:24:45
+Alexander Kekulé
+ Ja, das ist dieses Thema mit der Viruslast, also
+die Größe, die Menge der Viren. Wir wissen bei vielen Viruserkrankungen, so perfekt erforscht ist es nicht. Wenn kleine Mengen von Viren auf die Haut oder auf die Schleimhaut kommen. Dass dann der Körper in der Lage ist, dagegen zu reagieren in der Weise, dass er vor Ort das Virus einfach sofort plattmacht, bevor es zu einer systemischen Infektion kommt. Und das hat so eine Art Immunisierungs-Effekt. Ob da jetzt die Menschen vielleicht krank werden, ob sie es merken oder nicht, das kann man nicht so sagen. Aber es werden zumindest leichtere Erkrankungen. Also nach dem Motto viel Virus auf einmal. Wir haben das mal diskutiert im Zusammenhang mit der Inhalation von Viren in die Lunge. Das macht schwer krank. Und ein paar Viren, die da irgendwo auf der Nasenschleimhaut rumliegen. Die werden eben vom Immunsystem eliminiert mit der Folge, dass dann, wenn alles sauber läuft im Körper sich trotzdem diese Gedächtniszellen bilden, die dann eine Immunität verleihen. Das war ja das Prinzip der Variolation, die man früher gegen die Pocken auch verwendet hat.
+8
+
+0:25:53
+Camillo Schumann
+ Aber was mich bei dieser Theorie als erstes so ein bisschen gestört hat war, lassen Masken denn tatsächlich genügend durch?
+Alexander Kekulé
+ Naja, das wissen wir nicht. Also das mit den Masken, das würde ich jetzt nicht unterschreiben. Ob das jetzt so stimmt. Aber ganz allgemein kann man schon vermuten, dass Menschen, die nur ganz wenig Virus abgekriegt haben, eine leichtere Erkrankung haben. Das würden wir im engeren Sinn dann nicht Immunisierung nennen, weil es ja doch eine kleine Erkrankung dann ist. Aber es führt wahrscheinlich dazu, dass, falls das Virus noch mal kommt in höherer Dosis, dass es da nicht zu einem tödlichen Verlauf kommt. Also das, was wir eigentlich haben wollen in dieser Pandemie. Und natürlich ja, wenn man immer eine Maske im Gesicht hat oder wenn alle Beteiligten eine Maske im Gesicht haben in so einem geschlossenen Raum. Und wir stellen uns vor, es wäre dort ein Superspreader dabei, der große Mengen von Viren ausscheidet, sodass wir eigentlich luftgetragene Infektionen vermuten müssten. Dann wäre es natürlich so, wenn alle eine Maske einschließlich dem Superspreader aufhaben. Dann würde auch dieser Superspreader leider links und rechts durch die Luft, die da immer raus geht, natürlich auch Viren aussto-ßen. Nicht mehr so viele. Aber ein paar kommen da schon raus. Und die anderen haben jetzt eine Maske und einen Teil atmen sie durch den Stoff aus und einen Teil außen vorbei. Aber das würde ganz klar die Dosis reduzieren. Das würde wohl verhindern, dass mehrere Menschen in einem Raum, wie wir es ja bei diesen Superspreading-Ereignissen haben, auf einen Schlag tief inhalieren und dann unten in der Lunge das Virus haben. Sondern man könnte eben hoffen, dass mehr so eine Art Schleimhaut-Immunität entwickeln. Und das würde ins Bild passen. Also man muss dazu sagen, dass sind virologisch wilde Spekulationen. Aber es wäre zumindest plausibel. Ich war bis jetzt immer etwas vorsichtig, das ausführlich zu formulieren. Aber da hat ja kein Geringerer als Toni Fauci, der berühmte amerikanische Immunologe und Regierungsberater. Der hat das auf den Plan gebracht, diese Idee. Darum reden jetzt, glaube ich, viele Menschen auf der Welt darüber.
+
+0:27:56
+Camillo Schumann
+ Die Wissenschaftler schränken auch ein: Um unsere Hypothese zu überprüfen, brauchen wir weitere Studien, die den Anteil der asymptomatisch Infizierten in Gegenden mit und ohne Alltagsmasken vergleichen. Das muss man dem schon gegenüberstellen.
+
+0:28:13
+Alexander Kekulé
+ Das könnte man machen. Ich glaube, dass wird man so nicht rauskriegen. Also solche Studien wird es nicht geben, die das wirklich sauber wissenschaftlich belegen, weil die Alltagsmasken, haben Sie gesagt, die sind ja nun wiederum andere, als der klassische Mund-Nasen-Schutz, den man im OP aufhat. Und jede Maske ist ein bisschen anders. Selbst bei dem OP-Mundschutz ist es so, dass manche qualitativ besser sind oder besser sitzen und solche Dinge. Ich glaube, da kommt man nicht weit. Man muss auch eine Warnung aussprechen. Es ist ja so, diese Variolation, das ist ja die ursprüngliche Idee. Das kennen wir ja aus der Biologie in der Schule. Da hat man in China im 15. Jahrhundert schon damit angefangen, dass man getrocknete Pocken-Krusten also Variola. Da hat man Krusten von Pockenpatienten genommen, die aber so ausgesucht, dass man nur leichte Fälle genommen hat. Bei Pocken sterben nicht alle. Also im schlimmsten Fall vielleicht 30 Prozent, eher weniger. Hat man leichte Fälle genommen. Die Kruste genommen, gemörsert und dann entweder in Wunden aufgetragen oder in die Nase eingesprüht. Und das führte zum Teil dazu, dass die Menschen immun waren. Übrigens waren die schon so schlau damals in China, nach dieser Prozedur die Leute zu isolieren, also in Quarantäne zu bringen, weil die wussten, die könnten ansteckend sein. Aber ein erheblicher Teil ist natürlich daran gestorben. Da gab es immer wieder mal Tote, wenn die da vor allem das Militär geimpft haben. Inokuliert haben sie das damals genannt. Da gab es natürlich immer mal wieder Tote. Und als man in England, wo man ja wissenschaftlich meinte, man sei besser
+9
+als der Osten, dann davon gehört hat, irgendwie ganz früh im 18. Jahrhundert, dass es sowas gibt in China. Da hat man das komplett abgelehnt. Also die Royal Society, die wissenschaftliche Gesellschaft in England, hat gesagt: Das machen wir nicht, weil da sterben ja die Menschen. Das ist irgendwie so Voodoo-Medizin aus China. Das machen wir nicht. Und es war eigentlich dann witziger Weise so ähnlich wie bei uns mit den Masken. Das war so eine Art Basisbewegung von Menschen aus England. Die Pocken waren ja da. Und die Menschen haben gesagt: Nein, wir wollen das machen. Und die haben dann selber angefangen, quasi illegal gegen die Empfehlung der obersten Wissenschaftlichen Gesellschaft, mit diesen Variationen. Und als man das erste Mal gesehen hat, dass das wirklich funktioniert, da hat sich das nach und nach ausgebreitet.
+Camillo Schumann
+ So dass wir quasi die von der ersten Impfung der Welt in der Virologie sprechen?
+Alexander Kekulé
+ In der Virologie sprechen wir über den Effekt der Attenuierung, das Abschwächen eines Virus. Solche attenuierten, abgeschwächten Viren, die man zum Beispiel erhitzt hat, die kann man als Impfstoff verwenden. Das
+wurde auch später viel gemacht. Die Frage ist jetzt nur, ist so eine Verdünnung eigentlich eine echte Abschwächung, weil ein paar wenige wirklich voll aggressive, voll funktionsfähige Viren ausreichen, um krank zu machen. Und das ist wissenschaftlich, obwohl das uralt ist, ist das nicht besonders gut erforscht. Also Louis Pasteur hat in Paris ja bekanntlich einen jungen, diesen Wilhelm Meister geimpft, nachdem er von dem tollwütigen Hund gebissen wurde. Der hat auch nichts anderes gemacht, als Viren zu nehmen, Tollwutviren zu nehmen und zu trocknen und unterschiedlich lange zu trocknen und je länger getrocknet, da hat er gedacht: Na ja, da ist es dann abgeschwächt. Aber war es wirklich abgeschwächt oder war es nur weniger Virus? Das heißt also, das ist ein Riesengebiet, wo wir noch ganz viele Fragezeichen haben. Und deshalb möchte ich nicht dazu raten, es darauf ankommen zu lassen. Weil ich sehe schon wieder Leute, die dann so eine Art Masern-Party mit Masken veranstalten und meinen, dass sie auf die Weise sich gegen Covid-19 impfen könnten.
+
+0:31:48
+Camillo Schumann
+ Das Stichwort Impfung ist schon gefallen. Das soll uns jetzt auch beim nächsten Thema noch beschäftigen. Denn wir müssen auch über AstraZeneca sprechen kam. Vergangene Woche hatte die britisch-schwedische Pharmafirma die Phase-3-Studie für ihren Corona-Impfstoff unterbrechen müssen. Mindestens eine Patientin hatte eine schwere Erkrankung entwickelt, die man nicht auf Anhieb erklären konnte. So wurde es mitgeteilt. AstraZeneca stoppte daraufhin alle weiteren Impfung, damit dann unabhängige Experten überprüfen konnten, ob die Beschwerden auf den Impfstoff zurückzuführen sind. Nun wurde geprüft. Die Tests können wieder aufgenommen werden. In den USA aber noch nicht. Trotzdem bleiben sehr, sehr viele Fragen offen, weil auch nicht alle Informationen an die Öffentlichkeit gekommen sind. Zum Beispiel die Frage: Welche Erkrankung hatte die Patientin eigentlich? Was lesen Sie darüber?
+
+0:32:42
+Alexander Kekulé
+ Da gibt es das Gerücht, dass die eine sogenannte Myelitis hatte, also eine Entzündung des Rückenmarks. Das ist eine Entzündung des Nervenstrangs im Rückenmark. Da kriegt man Muskelschwäche der Arme und Beine unter Umständen bis hin zu schweren Lähmungen. Und das ist leider eine Nebenwirkung, die man
+bei Impfungen aber auch bei Virusinfektionen sehen kann. Und dieser Impfstoff aus Oxford, der hat ja ein Virus mit drin. Das ist zwar eigentlich nicht vermehrungsfähig, aber das ist eben dieses Adenovirus von einem Schimpansen, wo man die Vermutung haben könnte, dass das so eine Autoimmunreaktion ausgelöst hat. Solche Effekte sieht man. Es gibt eine autoimmune Myelitis, also diese Erkrankung gibt es als Autoimmunerkrankung. Und falls das stimmt, und es nicht nur ein Gerücht ist, dann ist es ganz klar das Richtige gewesen, dass die Studie erst mal gestoppt wurde.
+10
+
+0:33:37
+Camillo Schumann
+ Weil Sie noch einmal gesagt haben, Gerücht. Es gibt keine offiziellen Stellungnahmen, keine offiziellen Paper, in die man schauen kann, was ihr tatsächlich widerfahren ist und zu welcher Gruppe sie eigentlich gehörte. Möglicherweise gehörte sie auch zur Kontrollgruppe, die nur ein Placebo bekommen hat. Das ist völlig unklar.
+
+0:33:54
+Alexander Kekulé
+ Ja, das ist ganz wichtig, was Sie sagen. Also wir wissen nicht, ob das die war, die überhaupt den Impfstoff bekommen hat. Ähm, das klingt so ein bisschen absurd. Aber man muss sich klarmachen, dass ist eine strenge Studie, wie wir es immer gefordert haben. Wir haben ja schon ein paar Mal geschimpft auf die russische Methode oder auf manche chinesische Ideen, wie Impfstoffe ganz schnell entwickelt werden können, wo man quasi die Ecken abkürzt. Und hier hat man gesagt: Wir machen eine klassische Doppelblindstudie, eine randomisierte Studie. Doppelblind heißt weder der Arzt noch der Patient weiß, ob er ein Placebo bekommen hat, einen Nicht-Wirkstoff, oder ob er einen echten Impfstoff bekommen hat. Und das wird ganz streng überwacht von einem Kontrollkomitee, so ein Studien-Komitee. Die müssen sich exakt an die Regeln halten. Da steht eben in der Regel genau drinnen, unter welchen Umständen es zum Studienabbruch kommen muss. Solche Fälle, die typischerweise bei Autoimmunreaktionen vorkommen, sind eben Klassiker, wo man einen Abbruch macht. Aber die Kategorie, dass man die Studie entbindet, also quasi aufdeckt, wer in welcher Gruppe war. Diese Kategorie ist noch mal eine andere. Weil man muss sich vorstellen, sobald man aufgedeckt hat, wer in der Kontrollgruppe war und wer geimpft wurde, ist die Studie quasi nutzlos und zu Ende. Und hier ist es extrem wichtig, weiterzumachen und zu sehen, ob das ein Schutzeffekt bringt oder nicht. Und deshalb hat man sich entschieden, und das ist in dem Fall sicher vorher schon im Protokoll gestanden, dass man bei dieser Nebenwirkung konkret nicht die Studie abbricht und quasi aufdeckt, ob die Teilnehmerin hier in welcher Gruppe drin war. Und das andere, was man immer so ein bisschen im Auge haben muss. In dem Moment, wo man jetzt sagen würde, welche Symptome die hat. Wir vermuten, dass ist irgendwie durchgesickert, dass es Myelitis war. Wo man das sagen würde. Naja, stellen Sie sich vor, Sie sind Teilnehmer bei dem Ganzen. Und man sagt Ihnen da hat jemand eine Lähmung gehabt im rechten Arm. Und dann gehen Sie am gleichen Nachmittag Tennis spielen und verlieren. Da haben Sie das Gefühl, irgendwie war mein rechter Arm heute schlecht, schlechter als sonst. Sie sagen das Ihrem Studienarzt. Sagen das Ihrem Arzt. Und dann muss der das melden. Und dann heißt es Nebenwirkung Nummer zwei. Weil dieser psychologische Herdeneffekt ganz großen ist. Grad bei so Impfstoffstudien, wo die Leute ja emotional auch beteiligt sind. Und man muss sich klarmachen. Diese Studien werden ja gemacht.also ganz konkret die AstraZeneca. Meines Wissens haben die hauptsächlich Brasilien und Südafrika. Und in den USA haben sie auch noch ein Study Center. Das heißt also, die sind in Ländern, wo sie es jetzt nicht Leute haben, die medizinisch wahnsinnig aufgeklärt sind. Und die machen an dieser Studie mit. Und die haben vielleicht sonst alle möglichen Erkrankungen, weil sie sonst medizinisch nicht besonders gut versorgt werden, mal USA ausgenommen. Aber in Südamerika ist es eben so. Da haben sie viele Menschen, die in einer schlechten Gesundheitsversorgung sind. Dann machen die bei so einer Studie mit. Und dann werden natürlich alle möglichen Wehwehchen, die sie vorher schon gehabt haben, plötzlich festgestellt. Und das ist ein ganz bekannter Effekt bei solchen Studien, die man in ärmeren Ländern macht. Deshalb würde ich von einem einen Fall erst mal gar nichts schließen. Also einmal ist keinmal. Wenn es natürlich jetzt mehrmals auftreten sollte, dann stinkt da was.
+
+0:37:20
+Camillo Schumann
+ Man muss das ja ins Verhältnis zu setzen. Es sind mehrere 10.000 Probanden, die diesen Impfstoff bekommen. Und wenn es dort einer Probandin mal nicht so gut geht, offenbar auch richtig schlecht geht, dann ist das ja eigentlich ein fast normaler Verlauf.
+11
+Alexander Kekulé
+ Es wäre fast merkwürdig, wenn man bei so vielen Probanden nicht irgendwann so einen Effekt hätte. Dass irgendeiner der Probanden bei einem Verkehrsunfall ums Leben kommt im Lauf der Studie. Dass irgendjemand einen Herzinfarkt bekommt oder sonst was in den Ländern, die da betroffen sind, vielleicht auch Opfer eines Gewaltverbrechens wird und Ähnliches. Das hat alles eine gewisse Wahrscheinlichkeit. Und jetzt ist die Myelitis keine häufige Erkrankung. Das muss man schon sagen. Es ist eine sehr, sehr seltene Erkrankung. Aber man hätte die wahrscheinlich nicht zum Studienabbruch als Anlass genommen, wenn es nicht so wäre, dass wir wüssten, dass so eine Erkrankung typischerweise eben autoimmun sein kann.
+
+0:38:14
+Camillo Schumann
+ Und noch kurz der Hinweis darauf, weil die ganze Welt auf den Impfstoff wartet und natürlich jeden einzelnen Schritt überwacht. Auch die Medien haben ein Auge drauf. Der Firma wird ja mangelnde Transparenz vorgeworfen. Zurecht?
+
+0:38:32
+Alexander Kekulé
+ Ich finde das nicht. Aber das ist eine sehr politische, schwierige Frage. Ich persönlich finde, man muss hier auch in dieser angespannten Situation, wo viele Leute einfach mit den Nerven am Ende sind. Da muss man trotzdem sagen: Wir machen das kaltblütig, professionell wie immer. Und professionell heißt einfach, dass die Studie nicht entblindet wird wegen eines Falls. Und das heißt natürlich, dass die Einzelheiten solcher Nebenwirkungen nicht bekanntgegeben werden, weil eben alle Probanden die Zeitung lesen und soziale Medien benutzen und so weiter und sonst am nächsten Tag wüssten, was die Nebenwirkung war.
+
+0:39:13
+Camillo Schumann
+ Noch abschließend dieses Statement dazu, das von den Corona-Skeptikern benutzt wird, um auch Stimmung zu machen. Zu sagen, da wird uns was verschwiegen. Das ist alles nicht so sicher. Da gibt es starke Nebenwirkungen. Das wird uns sozusagen nicht übermittelt. Diese Information kann nicht so richtig sicher sein. Also dieses Argument wäre das dann sozusagen mit Ihrer Argumentation entkräftet?
+
+0:39:41
+Alexander Kekulé
+ Was heißt entkräftet. Man muss einfach sagen: Es ist ein ganz neuer Impfstoff. Es ist ein ganz neues Wirkprinzip. Von Anfang an ist klar gewesen, dass bei dieser Art, mit einem viralen Vektor zu impfen, dass bei dieser speziellen Art damit zu rechnen ist, dass es Autoimmunreaktionen gibt. Das war sozusagen ganz oben auf der möglichen Liste von Nebenwirkungen. Und jetzt ist es keinmal. Aber wenn sich das natürlich herausstellen sollte, dass sowas öfters vorkommt, dann kann man sagen, dann hätten Leute, die vielleicht Skeptiker sind und die sagen: Naja, einen vektorbasierten Impfstoff, den will ich eigentlich gar nicht haben. Oder so ein RNA-basierte Impfstoff ist mir auch zu gefährlich. Solche Menschen hätten dann auch ein gewisses wissenschaftliches Argument. Weil man muss ganz klar sagen, es sind ja früher mal in der Krebstherapie auch schon mit diesen Adenoviren Versuche gemacht worden. Und da gab es durchaus üble Nebenwirkungen. Und jetzt muss man deshalb genau gucken, ob das mit diesem neuen System nicht der Fall ist. Also ich bin schon dafür, dass man Menschen, die sagen: Wir wollen, dass das sehr genau geprüft wird ernst nimmt. Und dann gibt es die ganze kleine Gruppe von Skeptikern, ja sozusagen die Corona-Leugner, wie die inzwischen schon heißen. Ich glaube, die können Sie gar nicht überzeugen. Also, es ist nicht so Diese Art von Debatte liegt so weit auseinander, dass sie nicht mehr rationalen Argumenten zugänglich ist. Die hätten auch ein Argument gegen den Impfstoff gefunden, wenn es überhaupt keine Nebenwirkungen gibt.
+
+0:41:19
+Camillo Schumann
+ Damit kommen wir zu den Hörerfragen. Diese besorgte Mutter hat angerufen.
+Zuhörerin: Wir haben eine schwer herzkranke Tochter. Inwieweit ist es für die ganz Kleinen, unsere
+12
+Tochter ist drei. Inwieweit ist es gefährlich, dass sie sich mit dem Coronavirus anstecken, wenn man eine solche Vorbelastung mitbringen. Weil die Ärzte sind sich doch da auch nicht du ganz einig. Vielen Dank.
+
+0:41:37
+Camillo Schumann
+ Tja, viele Fragezeichen auch bei dieser Mutter.
+Alexander Kekulé
+ Das ist schwierig. Also kleine Kinder haben normalerweise keine schweren Herzkrankheiten. Also bei angeborenen Herzfehlern wird dann typischerweise nach der Geburt und danach mehrmals operiert. Bei Herzkrankheiten, die nicht angeboren sondern erworben sind. Und bei so einem kleinen Kind muss man halt ein bisschen unterscheiden, was es ist. Was wir jetzt nicht wissen für diesen speziellen Fall. Ich würde ganz allgemein arüber gibt es natürlich keine Statistik. Also, das muss man ganz klar sagen für seltene Sachen, dass ein kleines Kind schwer herzkrank ist. Da gibt es für Covid-19 keine Statistik. Deshalb würde ich einfach nach einem gesunden Menschenverstand vorgehen. Und der heißt hier: Da ist ein Gesundheitsrisiko vorhanden, was im Falle einer Intensivtherapie auf jeden Fall ein Problem wäre. Und deshalb würde ich sagen: Dieses Kind hat auf jeden Fall ein erhöhtes Risiko, wenn es Covid-19 kriegt, erhöht im Vergleich zu anderen Kindern. Wobei man natürlich sagen muss, andere Kinder haben praktisch überhaupt kein Problem damit, ob das jetzt 0 + 0,1 ist oder ob das ein wichtiger Faktor ist. Das kann man von hier aus nicht sagen. Also wenn ich, wenn ich so ein Kind hätte, würde ich einfach versuchen, wirklich zu verhindern, dass es die Infektion bekommt und an der Stelle nichts riskieren.
+
+0:42:55
+Camillo Schumann
+ Diese Dame hat angerufen. Sie hatte eine Nano Silbermaske und da haben wir auch schon darüber gesprochen. Nach der Einschätzung des Bundesinstituts für Risikobewertung wird diese Art von Masken nicht unbedingt empfohlen. Dadurch ist sie ein wenig verunsichert.
+
+0:43:08 Zuhörerin: Ich hatte nicht gewusst, dass das nicht ganz so ohne ist, ob man die in warmes Wasser legen kann und die Nanoteilchen sich dann aussondern. Das war meine Frage. Ob ich die dann loswerde oder die Maske einfach nicht benutze.
+
+0:43:21
+Alexander Kekulé
+ Ich würde die Maske wegtun. Ob sich das im warmen Wasser herauslöst. Wahrscheinlich ein Teil ja. Aber unser Bundesamt für Risikobewertung, die sind ja nicht so, dass sie ständig Alarm schreien. Sondern die sind eigentlich sehr gründlich, weil die sonst Ärger mit der Industrie bekommen würden. Und wenn die sich einmal so deutlich positionieren, dass sie sagen, das Inhalieren solcher Mikro Nano Silberpartikel könnte gefährlich sein, dann würde ich das mal ernst nehmen. Das sind ja die gleichen Leute, die zum Beispiel festgestellt haben, dass diese Weichmacher in Babyflaschen schädlich sind und dass man das nicht behalten soll. Und die werden ja normalerweise auch nicht mehr benutzt. Darum glaube ich, ist das sicherlich ein vernünftiger Ratschlag. Und er ist auch plausibel.
+
+0:44:08
+Camillo Schumann
+ Damit sind wir am Ende von Ausgabe 108. Und ich habe eingangs schon gesagt, am Ende gibt es zwei Beispiele dafür, wie man es nicht machen sollte. Das erste Beispiel ist, dass eine mutmaßliche Superspreaderin in Garmisch-Partenkirchen, eine 26-jährige Amerikanerin. Die soll dem zuständigen Landratsamt zufolge wegen Erkältungssymptomen einen Corona-Test gemacht haben. Noch bevor sie das Ergebnis erhielt und trotz Quarantäne-Anordnung soll sie mehrere Kneipen besucht und dabei auch zahlreiche weitere Menschen angesteckt haben. Einen Musterfall von Unvernunft hat das Bayerns Ministerpräsident Markus Söder genannt. Und Herr Kekulé. Unvernunft ist auch das Stichwort für den Fall an einer Uni in den USA. Dabei hatte man sich doch so große Mühe gegeben.
+13
+
+0:44:56
+Alexander Kekulé
+ Das ist ganz Klasse. Wir vergeben jetzt einmal im Monat die Corona-Krone. Das ist so, dass an der Uni von Illinois. Da haben die was ganz Tolles gemacht. Und zwar haben die ein ganz Supersystem. Ich bin richtig neidisch darauf. Sie haben etwas entwickelt, wie sie dort alle ihre Studenten testen. Die haben Testzelte aufgestellt. Die Studenten müssen da regelmä-ßig durch. Und die kriegen in kürzester Zeit ihre Resultate. Die haben so einen Spucke-Test entwickelt, der den Vorteil hat, dass es viel weniger Material verbraucht und auch sehr schnell geht. Die haben da 25 Labortechniker ständig im Einsatz gehabt, hatten 20 Zelte mit 200 Helfern. Und wenn die Studenten nicht beim Testen waren, dann war das so geschaltet, dass sie mit ihrer Karte, mit der sie auf dem Campus in die Häuser rein kommen, einfach nicht mehr reinkamen. Diese elektronischen Karten, ID-Karten wurden blockiert. Und dieses Supersystem hat trotzdem dazu geführt, dass am 31.08. jetzt vor gut zwei Wochen an einem Tag 230 Infektionen waren. 230. Raten Sie mal, warum.
+Camillo Schumann
+ Ich weiß es ja. Es gab ein paar Studenten, die sich nicht um ihr Ergebnis geschert haben und feiern gegangen sind.
+Alexander Kekulé
+ Genau. Die waren positiv. Das ging auch noch auf die App. Die haben es aufs Handy geschickt bekommen. Haben gemeldet bekommen, dass sie positiv sind und sich in Quarantäne begeben sollen. Dann kamen sie natürlich von dem Tag an nicht mehr in die Universitätsgebäude. Sie waren sofort gesperrt. Aber in die Kneipen und auf die Partys konnten sie noch gehen. Und da haben sie das Virus verteilt.
+
+0:46:29
+Camillo Schumann
+ So unterhaltsam das auch klingt, was da in Garmisch-Partenkirchen passiert ist und an dieser Universität. Aber so einen ernsten Hintergrund hat es ja auch. Weil es kann am Ende dazu führen, dass Menschen im Krankenhaus landen
+
+0:46:42
+Alexander Kekulé
+ Nein, man muss natürlich immer klar dazu sagen, das ist nett mal einen Spaß zu machen. Vor allem, wenn der emotionale Druck im Lauf der Zeit dieser Pandemie natürlich gestiegen ist. Aber wir haben es immer noch mit einer tödlichen Erkrankung, mit einer potenziell tödlichen Erkrankung zu tun. Und ich kann wirklich nur immer an alle appellieren, die damit zu tun haben, dass das weiterhin ernst genommen wird.
+
+0:47:01
+Camillo Schumann
+ Vielen Dank, Herr Kekulé, wir hören uns dann am Donnerstag wieder.
+Alexander Kekulé
+ Gerne bis Donnerstag, Herr Schumann.
+Camillo Schumann
+ Sie haben auch eine Frage an uns, dann schreiben Sie uns:
+mdraktuell-podcast@mdr.de. Oder rufen Sie uns an unter 0800 30022 00.
+Kekulés Corona-Kompass auch als ausführlicher Podcast auf mdraktuell.de, in der ARD-Audiothek, bei YouTube und überall, wo es Podcasts gibt.
+Kekulés Corona-
