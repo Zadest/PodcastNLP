@@ -41,10 +41,11 @@ def performRegEx(text):
     cleanText = speakertransformed
     return cleanText
 
-def iterateFiles(filepath:str,index):
+def iterateFiles(filepath:str,file_name):
+    index = len(file_name)
     for i in range(0,index):
-        path = os.path.join(filepath,str(i)+'.pdf')
-        print(path)
+        path = os.path.join(filepath,file_name[i])
+        print(path,index)
 
         if os.path.exists(path):
             text = extrText(path)
@@ -58,8 +59,7 @@ if __name__ == "__main__":
     folder = os.path.join('data','RAW','mdr')
 
     # get file count in folder:
-    file_count = len(os.listdir(folder))-1
-
+    file_name = os.listdir(folder)
     # Iterate over all files in folder:
-    iterateFiles(folder,file_count)
+    iterateFiles(folder,file_name)
 

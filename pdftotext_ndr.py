@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 
 import texttojson_ndr as jndr
-from dataTools import iter_files as iter
+# from dataTools import iter_files as iter
 
 def text_to_dict(text:str,write_state:bool=False) -> dict[int,list[str]] or None:
     textLineItems = text.split('\n')    
@@ -152,8 +152,9 @@ def performRegEx(text):
     return cleanText
 
 def iterateFiles(filepath:str,index):
-    for i in range(100,index,2):
-        path = os.path.join(filepath,'coronaskript'+str(i)+'.pdf')
+    for i in range(0,index,2):
+        index = i+100
+        path = os.path.join(filepath,'coronaskript'+str(index)+'.pdf')
         print(path)
         if os.path.exists(path):
             text = extrText(path)
@@ -182,6 +183,6 @@ if __name__ == "__main__":
     folder = os.path.join('data','RAW','ndr')
     # get file count in folder
     file_count = len(os.listdir(folder))-1
-
+    print(file_count)
     # Iterate over all files in folder:
     iterateFiles(folder,file_count)
