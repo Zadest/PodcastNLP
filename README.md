@@ -14,7 +14,7 @@ Podcast Analyse Tool zur NLP Untersuchung von deutschsprachigen Corona Podcasts.
   - [ ] Annotation (?)
 - [ ] Auswertung
   - [ ] Wordcount per Person
-  - [ ] Sentinentanalyse
+  - [ ] Sentimentanalyse
     - [ ] TextBlob-de Standard
     - [ ] eigenes Wörterbuch
   - [ ] Wortartvergleich

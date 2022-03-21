@@ -63,5 +63,3 @@ def test():
     return text_ndr, text_mdr
 
 
-if __name__ == "__main__":
-    load_files()

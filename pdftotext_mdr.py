@@ -82,7 +82,6 @@ def iterateFiles(filepath,index):
 
 mylist = iterateFiles(os.path.join('data','RAW','mdr'),len(os.listdir(os.path.join("data","RAW","mdr"))))
 
-
 for i, episode in enumerate(mylist):
     results = re.findall(r'\n(.*\s(?:Schumann|Kröger|Kekulé|Deisinger|Markert))\n(.*)',episode)
     header = episode[:re.search(r'\n(.*\s(?:Schumann|Kröger|Kekulé|Deisinger|Markert))\n(.*)',episode).span()[0]+1]

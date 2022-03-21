@@ -14,6 +14,7 @@ from pathlib import Path
 
 import texttojson_ndr as jndr
 
+
 def text_to_dict(text:str,write_state:bool=False) -> dict[int,list[str]] or None:
     textLineItems = text.split('\n')    
     my_dict = {}
@@ -188,10 +189,9 @@ def performRegEx(text,i,index):
             return cleanText
 
 def iterateFiles(filepath:str,index):
-    return_list = []
-    files = os.listdir(filepath)
-    for i in range(len(files)):
-        path = os.path.join(filepath,files[i])
+    for i in range(0,index,2):
+        index = i+100
+        path = os.path.join(filepath,'coronaskript'+str(index)+'.pdf')
         print(path)
         if os.path.exists(path)and i!=174 or i!=154:
             text = extrText(path)
@@ -223,6 +223,6 @@ if __name__ == "__main__":
 
     # get file count in folder:
     file_count = len(os.listdir(folder))-1
-
+    print(file_count)
     # Iterate over all files in folder:
     myList = iterateFiles(folder,file_count)
